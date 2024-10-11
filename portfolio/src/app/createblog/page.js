@@ -26,5 +26,5 @@ export default function CreateBlog() {
     }
   };
 
-  return <BlogForm onSubmit={handleCreateBlog} />;
+  return <BlogForm onSubmit={handleCreateBlog} /> ;
 }
