@@ -30,6 +30,7 @@ const BlogPage = async ({ params }: { params: { id: string } }) => {
       <p className="text-gray-700 mt-4">{blog.description}</p>
       <p className="text-sm text-gray-500">Views: {blog.views}</p>
       <p className="text-sm text-gray-500">Comments: {blog.coment}</p>
+      <p className="text-sm text-gray-500">content:{blog.content}</p>
     </div>
   );
 };

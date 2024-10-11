@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Hamburger } from "../hamburger";
 import { useRouter } from "next/navigation";
 import Router from "next/router";
+import ToggleButton from "../togglebutton";
 // import { Router } from "lucide-react";
 
 export default function Navbar() {
@@ -82,7 +83,7 @@ export default function Navbar() {
           </a>
 
         </div>
-
+<ToggleButton/>
         {/* Button for hiring on all screens */}
         <div
           onClick={() => router.push(`/api/auth/signin`)}
