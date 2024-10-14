@@ -1,6 +1,6 @@
 // import Image from "next/image";
 
-import { HomeIntro } from "../../components/ui/homeintro"
+import { HomeIntro } from "../../components/Homepage/homeintro"
 
 // import Navbar from "../../components/ui/navbar";
 

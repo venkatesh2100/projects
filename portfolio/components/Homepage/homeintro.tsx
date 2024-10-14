@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { SocialLink } from "../socialink";
-import { HeroBtn } from "../aboutme";
+import { SocialLink } from "../ui/socialink";
+import { HeroBtn } from "./aboutme";
 import { NotebookTabs } from "lucide-react";
 import { toast, Toaster } from "sonner";
 export const HomeIntro = () => {

@@ -1,8 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import BlogCard from "../blogcard";
-import BlogSkeleton from "../blogskeleton"; // Import the skeleton
-import SearchBar from "../searchbar";
+import BlogCard from "./blogcard";
+import BlogSkeleton from "./blogskeleton"; // Import the skeleton
+import SearchBar from "../ui/searchbar";
 
 // Extend the Blog interface to match your API's response structure
 interface Blog {
