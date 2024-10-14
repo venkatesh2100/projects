@@ -1,4 +1,4 @@
-import Project from "../projectsprop";
+import Project from "./projectsprop";
 
 export const ProjectComponent = () => {
   return (
