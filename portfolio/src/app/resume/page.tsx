@@ -1,4 +1,4 @@
-import ResumeComponent from "../../../components/ui/resume";
+import ResumeComponent from "../../../components/resume/resume";
 
 
 

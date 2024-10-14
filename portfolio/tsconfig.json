@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/richtexteditor.js", "src/app/updateblog/page.js", "src/app/createblog/page.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/blogpage/richtexteditor.js", "src/app/updateblog/page.js", "src/app/createblog/page.js"],
   "exclude": ["node_modules"]
 }

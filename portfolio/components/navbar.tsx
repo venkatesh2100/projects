@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import { Hamburger } from "../hamburger";
+import { Hamburger } from "./ui/hamburger";
 import { useRouter } from "next/navigation";
 import Router from "next/router";
-import ToggleButton from "../togglebutton";
+import ToggleButton from "./ui/togglebutton";
 // import { Router } from "lucide-react";
 
 export default function Navbar() {

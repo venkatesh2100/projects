@@ -1,4 +1,4 @@
-import BlogComponet from "../../../components/ui/blogs";
+import BlogComponet from "../../../components/blogpage/blogs";
 
 
 
