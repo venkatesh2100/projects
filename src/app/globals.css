@@ -1,14 +1,23 @@
+/* globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --cal-bg: hsla(90, 30%, 40%, 1); /* Default background color * /* Example foreground color */
+}
 
+.dark {
+  --cal-bg: hsla(0, 0%, 10%, 1); /* Dark mode background color */
+  --foreground: #d12b2b; /* Example dark mode foreground color */
+}
 
 body {
+  background: var(--cal-bg);
   color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
 
 @layer utilities {
   .text-balance {
@@ -63,7 +72,7 @@ html {
   --cal-bg: hsla(0,0%,100%,1);
   --cal-bg-subtle: hsla(220, 14%, 96%,1);
   --cal-bg-muted: hsla(210,20%,98%,1);
-  --cal-bg-inverted: hsla(0,0%,6%,1);
+  --cal-bg-inverted: rgb(42, 17, 17);
 
   /* background -> components*/
   --cal-bg-info: hsla(218,83%,98%,1);
