@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "../../components/navbar";
+import Navbar from "../../components/navbar"
 import Footer from "../../components/footer";
 import { Toaster } from "sonner";
 
@@ -29,10 +29,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialia0sed`}
+        className={`${geistSans.variable} ${geistMono.variable} antialia0sed dark:bg-black`}
       >
         <Toaster richColors/>
-        <Navbar />
+        <Navbar  />
         {children}
         <Footer/>
       </body>

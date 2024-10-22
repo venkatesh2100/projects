@@ -6,7 +6,8 @@ import { HomeIntro } from "../../components/Homepage/homeintro"
 
 export default function Home() {
   return (
-    <div className="md:mx-60 min-h-screen flex-grow">
+    <div className="md:mx-60 min-h-screen bg:background flex-grow ">
+
       <HomeIntro/>
 
     </div>
