@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { PrismaClient } from "@prisma/client";
 import { withAccelerate } from "@prisma/extension-accelerate";
-import {validate as  isUUID} from "uuid"
+// import {validate as  isUUID} from "uuid"
 // Initialize Prisma Client
 const prisma = new PrismaClient({
   datasources: {

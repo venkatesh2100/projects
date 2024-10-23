@@ -11,7 +11,7 @@ const handler = NextAuth({
         username: { label: 'email', type: 'text', placeholder: '' },
         password: { label: 'password', type: 'password', placeholder: '' },
       },
-      async authorize(credentials: any) {
+      async authorize(credentials) {
 
         if (credentials?.username === 'admin' && credentials?.password === 'password') {
           return { id: 'user1', name: 'Admin', email: 'admin@example.com' };

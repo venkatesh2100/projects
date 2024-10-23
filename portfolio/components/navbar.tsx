@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { Hamburger } from './ui/hamburger';
 import { useRouter } from 'next/navigation';
-import Router from 'next/router';
+// import Router from 'next/router';
 import ToggleButton from './ui/togglebutton';
 // import { Router } from "lucide-react";
 

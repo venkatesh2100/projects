@@ -1,7 +1,7 @@
 
-import { GetServerSideProps } from "next";
+// import { GetServerSideProps } from "next";
 import { PrismaClient } from "@prisma/client";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 import Image from "next/image";
 
 const prisma = new PrismaClient();

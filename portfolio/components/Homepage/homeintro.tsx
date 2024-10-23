@@ -4,7 +4,7 @@ import Image from "next/image";
 import { SocialLink } from "../ui/socialink";
 import { HeroBtn } from "./aboutme";
 import { NotebookTabs } from "lucide-react";
-import { toast, Toaster } from "sonner";
+import { toast } from "sonner";
 export const HomeIntro = () => {
   return (
     <div className="border-black">
