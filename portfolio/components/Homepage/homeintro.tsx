@@ -10,14 +10,14 @@ export const HomeIntro = () => {
     <div className="border-black">
       <section className="md:flex md:items-center md:space-x-8 ">
         <div className="p-10">
-          <h1 className="font-meduim text-3xl md:text-5xl mb-4 text-black">
+          <h1 className="font-meduim text-3xl md:text-5xl mb-4 text-black dark:text-white">
             Hi, I&apos;m
             <span className="text-blue-500"> Venkatesh</span>
             <span className="wave text-black">👋</span>
           </h1>
 
           <div className="col-span-3 max-w-2xl">
-            <p className="px-0  text-lg text-left text-gray-600 md:leading-8 mb-4">
+            <p className="px-0  text-lg text-left text-text2  md:leading-8 mb-4">
               I&apos;m a software engineer from India, specializing in
               JavaScript, TypeScript, React, and 69 other technologies.
               Passionate about serverless architectures and full-stack
@@ -33,7 +33,7 @@ export const HomeIntro = () => {
 
               <button
                 onClick={() => toast.success("OK")}
-                className="inline-flex mt-1 ml-1 py-2 hover:bg-green-400  px-2 sm:py-4 md:py-6 sm:px-7 md:px-9 animate-shimmer items-center text-2xl justify-center rounded-md border dark:border-gray-300 dark:bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] font-medium dark:text-slate-500 hover:text-slate-900 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 dark:bg-black focus:ring-offset-slate-50 gap-2"
+                className="inline-flex dark:border-black mt-1 ml-1 py-2 hover:bg-green-400  px-2 sm:py-4 md:py-6 sm:px-7 md:px-9 animate-shimmer items-center text-2xl justify-center rounded-md border  dark:bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] font-medium dark:text-slate-500 hover:text-slate-900 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 dark:bg-black focus:ring-offset-slate-50 gap-2"
               >
                 <a href="/blogs" >check out my blog </a> <NotebookTabs />
               </button>
