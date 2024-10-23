@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "../../components/navbar"
 import Footer from "../../components/footer";
 import { Toaster } from "sonner";
+import Particles from "../../components/aboutme/particles";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,11 +30,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialia0sed dark:bg-black`}
+        className={`${geistSans.variable} ${geistMono.variable} antialia0sed  dark:bg-grid-small-white/[0.3] sm:dark:bg-grid-white/[0.1]  `}
       >
         <Toaster richColors/>
         <Navbar  />
         {children}
+        <Particles className="absolute  inset-0 -z-10 animate-fade-in" quantity={150}/>
         <Footer/>
       </body>
     </html>
