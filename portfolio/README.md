@@ -37,7 +37,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 # portfolio
 
 ### Task TODO DO:
--[] Make Rocket animation when ever hover On Switch Button.
--[x] Make Dark mode Like one which is like Nextjs website
--[] Implement more blogs [1]
--[] Create a special for creating Blogs in the Md format [60]
+- [ ] Make Rocket animation when ever hover On Switch Button.
+- [x] Make Dark mode Like one which is like Nextjs website
+- [ ] Implement more blogs [1]
+- [ ] Create a special for creating Blogs in the Md format [60]
