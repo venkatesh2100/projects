@@ -37,6 +37,11 @@ const config: Config = {
         text2: 'var(--cal-text2)',
         footer:'var(--cal-footer)'
       },
+      cursor: {
+        boy: "url('/win-1.cur'), auto",
+        win2: "url('/win-2.cur'), auto",
+        rock: "url('/Rocket Pointer.png'), auto", // Assuming this is the correct path
+      }
     },
   },
   plugins: [

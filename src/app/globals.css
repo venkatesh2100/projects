@@ -51,9 +51,11 @@ body {
   }
 }
 
-html {
+html,body {
   scroll-behavior: smooth;
+  @apply overflow-x-hidden;
 }
+/* globals.css */
 
 /* Add css variables here as well for light mode in addition to tailwind.config to avoid FOUC*/
 :root{
