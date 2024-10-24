@@ -72,14 +72,12 @@ export default function Navbar() {
           >
             Projects
           </a>
-
           <a
             href="/aboutme"
             className="hover:text-red-400 transition-colors duration-200"
           >
             About Me
           </a>
-
           <a
             href="/resume"
             className="hover:text-green-400 transition-colors duration-200"
