@@ -7,7 +7,7 @@ import { NotebookTabs } from 'lucide-react';
 import { toast } from 'sonner';
 
 export const HomeIntro = () => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);//making always True
 
   // Function to handle theme change based on user preference or system setting
   const updateTheme = () => {
@@ -16,24 +16,24 @@ export const HomeIntro = () => {
   };
 
   // UseEffect to monitor changes in the theme
-  useEffect(() => {
-    // Initial theme setup
-    updateTheme();
+  // useEffect(() => {
+  //   // Initial theme setup
+  //   updateTheme();
 
-    // Event listener for theme change
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  //   // Event listener for theme change
+  //   const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
-    const handleThemeChange = (e: MediaQueryListEvent) => {
-      setIsDarkMode(e.matches);
-    };
+  //   // const handleThemeChange = (e: MediaQueryListEvent) => {
+  //   //   setIsDarkMode(e.matches);
+  //   // };
 
-    // Add event listener for changes in system theme
-    mediaQuery.addListener(handleThemeChange);
+  //   // Add event listener for changes in system theme
+  //   // mediaQuery.addListener(handleThemeChange);
 
-    return () => {
-      mediaQuery.removeListener(handleThemeChange);
-    };
-  }, []);
+  // //   return () => {
+  // //     // mediaQuery.removeListener(handleThemeChange);
+  // //   };
+  // }, []);
 
 
   return (
@@ -73,10 +73,19 @@ export const HomeIntro = () => {
         {/* Rocket and Moon (Only visible in dark mode) */}
         {isDarkMode ? (
           <div className="relative">
+            <div className="pt-20 relative;"><iframe src="https://giphy.com/embed/kmUvauX8TMWg0OsqKW" width="100%" height="100%" className="absolute" frameBorder="0"  allowFullScreen>
+            </iframe>
+            </div>
+            {/* <p><a href="https://giphy.com/stickers/Emoji-transparent-kmUvauX8TMWg0OsqKW"></a></p> */}
+            <div className="sm:text-9xl text-9xl  pt-10 ml-20 animate-bounce">🚀</div>
 
-              <div className="text-9xl  pt-10 animate-pulse">🚀</div>
+            {/* <div className="sm:text-9xl text-9xl  pr-30 pt-10 animate-spin-slow">🌎</div>
+             */}
 
-            <div className="absolute text-9xl animate-rise -top-20 left-60">
+
+
+
+            <div className="absolute  text-9xl animate-rise -top-20 left-60">
               🌕
             </div>
           </div>
@@ -94,31 +103,43 @@ export const HomeIntro = () => {
 
       {/* Custom Animations for Rocket and Moon */}
       <style jsx>{`
-        @keyframes rise {
-          0% {
-            transform: translateY(0);
-          }
-          100% {
-            transform: translateY(-60px); /* Move moon upwards */
-          }
-        }
-        .animate-rise {
-          animation: rise 2s infinite alternate;
-        }
-        @keyframes bounce {
-          0%,
-          100% {
-            transform: translateX(0);
-          }
-          50% {
-            transform: translateY(-20px); /* Bounce effect for the rocket */
-          }
-        }
+    @keyframes rise {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-60px); /* Move moon upwards */
+      }
+    }
+    .animate-rise {
+      animation: rise 2s infinite alternate;
+    }
 
-        .animate-bounce {
-          animation: bounce 3s infinite;
-        }
-      `}</style>
+    @keyframes bounce {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px); /* Bounce effect for the rocket */
+      }
+    }
+    .animate-bounce {
+      animation: bounce 3s infinite;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(90deg);
+      }
+      100% {
+        transform: rotate(-90deg);
+      }
+    }
+    .animate-spin-slow {
+      animation: spin 5s linear infinite; /* Slower spin for the earth */
+    }
+  `}</style>
     </div>
   );
 };

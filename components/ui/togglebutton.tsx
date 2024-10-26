@@ -45,7 +45,7 @@ const ToggleButton: React.FC = () => {
           {/* <video src="path_to_video.mp4" autoPlay muted className="w-full h-full object-cover"></video> */}
         </div>
       )}
-        <HoverMe className=" h-14 ml-80 w-full  object-cover opacity-50 md:end-4 md:top-2 absolute  dark:invert" />    {/* Full-Screen Content */}
+          <HoverMe className=" h-14 ml-80 w-full  object-cover opacity-50 md:end-4 md:top-2 absolute hidden sm:block dark:invert" />
       <button
         onClick={toggleTheme}
         className={`relative z-10 flex items-center justify-between w-16 h-8 p-1 bg-gray-300 dark:bg-gray-700 rounded-full focus:outline-none focus:ring-4 focus:ring-offset-2 focus:ring-indigo-500 transition-all duration-300`}
