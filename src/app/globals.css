@@ -88,6 +88,7 @@ body {
 /* Add css variables here as well for light mode in addition to tailwind.config to avoid FOUC*/
 :root{
   --cal-bg: rgb(239, 235, 235);
+  /* --cal-bg: rgb(190, 171, 171); */
   --cal-text:rgb(0, 0, 0);
   --cal-text2:rgb(82, 78, 78);
   --cal-footer:rgba(200, 193, 193, 0.268);
