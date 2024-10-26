@@ -16,24 +16,24 @@ export const HomeIntro = () => {
   };
 
   // UseEffect to monitor changes in the theme
-  // useEffect(() => {
-  //   // Initial theme setup
-  //   updateTheme();
+  useEffect(() => {
+    // Initial theme setup
+    updateTheme();
 
-  //   // Event listener for theme change
-  //   const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    // Event listener for theme change
+    // const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
-  //   // const handleThemeChange = (e: MediaQueryListEvent) => {
-  //   //   setIsDarkMode(e.matches);
-  //   // };
+    // const handleThemeChange = (e: MediaQueryListEvent) => {
+    //   setIsDarkMode(e.matches);
+    // };
 
-  //   // Add event listener for changes in system theme
-  //   // mediaQuery.addListener(handleThemeChange);
+    // Add event listener for changes in system theme
+    // mediaQuery.addListener(handleThemeChange);
 
-  // //   return () => {
-  // //     // mediaQuery.removeListener(handleThemeChange);
-  // //   };
-  // }, []);
+  //   return () => {
+  //     // mediaQuery.removeListener(handleThemeChange);
+  //   };
+  }, []);
 
 
   return (
