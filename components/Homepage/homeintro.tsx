@@ -1,39 +1,40 @@
 'use client';
-import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
+// import React, { useEffect, useState } from 'react';
+// import Image from 'next/image';
 import { SocialLink } from '../ui/socialink';
 import { HeroBtn } from './aboutme';
 import { NotebookTabs } from 'lucide-react';
 import { toast } from 'sonner';
 
 export const HomeIntro = () => {
-  const [isDarkMode, setIsDarkMode] = useState(true);//making always True
+  // const [isDarkMode, setIsDarkMode] = useState(true);//making always True
 
-  // Function to handle theme change based on user preference or system setting
-  const updateTheme = () => {
-    const theme = window.localStorage.getItem('theme') || 'light';
-    setIsDarkMode(theme === 'dark');
-  };
+  // // Function to handle theme change based on user preference or system setting
+  // const updateTheme = () => {
+  //   const theme = window.localStorage.getItem('theme') || 'light';
+  //   setIsDarkMode(theme === 'dark');
+  // };
 
-  // UseEffect to monitor changes in the theme
-  useEffect(() => {
-    // Initial theme setup
-    updateTheme();
+  // // UseEffect to monitor changes in the theme
+  // useEffect(() => {
+  //   // Initial theme setup
+  //   updateTheme();
 
-    // Event listener for theme change
-    // const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  //   // Event listener for theme change
+  //   const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
-    // const handleThemeChange = (e: MediaQueryListEvent) => {
-    //   setIsDarkMode(e.matches);
-    // };
+  //   const handleThemeChange = (e: MediaQueryListEvent) => {
+  //     setIsDarkMode(e.matches);
+  //   };
 
-    // Add event listener for changes in system theme
-    // mediaQuery.addListener(handleThemeChange);
+  //   // Add event listener for changes in system theme
+  //   mediaQuery.addListener(handleThemeChange);
 
   //   return () => {
   //     // mediaQuery.removeListener(handleThemeChange);
   //   };
-  }, []);
+  // }, []);
+
 
 
   return (
@@ -71,9 +72,11 @@ export const HomeIntro = () => {
         </div>
 
         {/* Rocket and Moon (Only visible in dark mode) */}
-        {isDarkMode ? (
+        {/* {isDarkMode
+        ?  */}
+        {/* ( */}
           <div className="relative">
-            <div className="pt-20 relative;"><iframe src="https://giphy.com/embed/kmUvauX8TMWg0OsqKW" width="100%" height="100%" className="absolute" frameBorder="0"  allowFullScreen>
+            <div className="pt-20"><iframe src="https://giphy.com/embed/kmUvauX8TMWg0OsqKW" width="90%" height="100%" className="absolute" frameBorder="0"  allowFullScreen>
             </iframe>
             </div>
             {/* <p><a href="https://giphy.com/stickers/Emoji-transparent-kmUvauX8TMWg0OsqKW"></a></p> */}
@@ -89,16 +92,18 @@ export const HomeIntro = () => {
               🌕
             </div>
           </div>
-        ) : (
-          // Image (Only visible in light mode)
-          <Image
+        {/* ) */}
+        {/* : */}
+         {/* ( */}
+          {/* // Image (Only visible in light mode) */}
+          {/* <Image
             alt="profile pic"
             src="/luffy.jpeg"
             width={300}
             height={50}
             className="p-4 mx-auto border-black rounded-md shadow-xl"
-          />
-        )}
+          /> */}
+        {/* )} */}
       </section>
 
       {/* Custom Animations for Rocket and Moon */}
