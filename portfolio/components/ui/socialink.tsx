@@ -108,7 +108,7 @@ export const SocialLink=()=>{
                 <a
                   href="https://www.youtube.com/@codewithvenky?sub_confirmation=1"
                   target="_blank"
-                  className="animate-bounce rounded-full p-1"
+                  className="hover:animate-bounce rounded-full p-1"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
