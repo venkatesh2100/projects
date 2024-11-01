@@ -119,7 +119,7 @@ export const HomeIntro = () => {
             {/* <p><a href="https://giphy.com/stickers/Emoji-transparent-kmUvauX8TMWg0OsqKW"></a></p> */}
             <div className="sm:text-9xl text-9xl  pt-10 ml-20 animate-bounce">🚀</div>
 
-            {/* <div className="sm:text-9xl text-9xl  pr-30 pt-10 animate-spin-slow">🌎</div>
+            {/* <div className="sm:text-9xl text-9xl  pr-30 pt-1 0 animate-spin-slow">🌎</div>
              */}
 
 
