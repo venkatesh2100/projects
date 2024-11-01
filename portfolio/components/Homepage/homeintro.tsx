@@ -1,4 +1,5 @@
 'use client';
+import { useEffect, useState } from 'react';
 import { Spotlight } from '../aboutme/ui/Spotlight';
 import { TextGenerateEffect } from '../aboutme/ui/TextGenerateEffect';
 // import React, { useEffect, useState } from 'react';
@@ -9,6 +10,18 @@ import { NotebookTabs } from 'lucide-react';
 import { toast } from 'sonner';
 
 export const HomeIntro = () => {
+  const [isZoomed,setIsZoomed]=useState(false);
+  useEffect(()=>{
+    const checkZoom=()=>{
+      const zoomLevel=Math.round(window.devicePixelRatio*100);
+      setIsZoomed(zoomLevel===100);
+    }
+    checkZoom();
+    window.addEventListener('resize',checkZoom);
+
+    return ()=>window.addEventListener('resize',checkZoom);
+  },[]);
+
   // const [isDarkMode, setIsDarkMode] = useState(true);//making always True
 
   // // Function to handle theme change based on user preference or system setting
@@ -78,7 +91,7 @@ export const HomeIntro = () => {
               </div>
               <TextGenerateEffect
               className="text-sm  pl-10 hidden md:block"
-              words="Designed 🛠️ for 80%Zoom checkout    "
+              words="Designed 🛠️ for 80% Zoom checkout    "
               // highlightedWordIndex={5} // Specify the index of the word to highlight
             />
             </div>
@@ -99,8 +112,8 @@ export const HomeIntro = () => {
         {/* {isDarkMode
         ?  */}
         {/* ( */}
-          <div className="relative">
-            <div className="pt-20"><iframe src="https://giphy.com/embed/kmUvauX8TMWg0OsqKW" width="90%" height="100%" className="absolute" frameBorder="0"  allowFullScreen>
+          <div className={`relative ${isZoomed?'hidden':''}`}>
+            <div className={`pt-20 ${isZoomed?'hidden':''}` }><iframe src="https://giphy.com/embed/kmUvauX8TMWg0OsqKW" width="90%" height="100%" className="absolute" frameBorder="0"  allowFullScreen>
             </iframe>
             </div>
             {/* <p><a href="https://giphy.com/stickers/Emoji-transparent-kmUvauX8TMWg0OsqKW"></a></p> */}
