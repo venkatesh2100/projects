@@ -14,7 +14,7 @@ export const HomeIntro = () => {
   useEffect(()=>{
     const checkZoom=()=>{
       const zoomLevel=Math.round(window.devicePixelRatio*100);
-      setIsZoomed(zoomLevel===100);
+      setIsZoomed(zoomLevel===125);
     }
     checkZoom();
     window.addEventListener('resize',checkZoom);
@@ -91,7 +91,7 @@ export const HomeIntro = () => {
               </div>
               <TextGenerateEffect
               className="text-sm  pl-10 hidden md:block"
-              words="Designed 🛠️ for 80% Zoom checkout    "
+              words="𝔇𝔢𝔰𝔦𝔤𝔫𝔢𝔡 🛠️ 𝔣𝔬𝔯 80% ℨ𝔬𝔬𝔪 𝔠𝔥𝔢𝔠𝔨𝔬𝔲𝔱    "
               // highlightedWordIndex={5} // Specify the index of the word to highlight
             />
             </div>

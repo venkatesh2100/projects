@@ -30,7 +30,7 @@ export default function Home() {
         {/* <Skills /> */}
         <Projects />
         {/* <Education /> */}
-        <Contact />
+        {/* <Contact />  */}
       </div>
     </main>
   );
