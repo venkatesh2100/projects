@@ -52,18 +52,19 @@ export const HomeIntro = () => {
 
   return (
     <div className="border-black  cursor-rock">
-      <Spotlight
-        className="absolute top-10 left-0 h-[30vh] w-[20vh] sm:h-[80vh] sm:w-[50vh] sm:top-28 sm:-left-10 overflow-hidden"
-        fill="white"
-      />
-      <Spotlight
-        className="absolute top-20 right-0 h-[30vh] w-[20vh] sm:h-[80vh] sm:w-[50vh] sm:left-full"
-        fill="purple"
-      />
-      <Spotlight
-        className="absolute top-32 left-20 h-[30vh] w-[20vh] sm:h-[80vh] sm:w-[50vh] sm:left-80"
-        fill="blue"
-      />
+<Spotlight
+  className="absolute top-10 left-0 h-[30vh] w-[20vh] sm:h-[80vh] sm:w-[50vh] sm:top-28 sm:-left-10 overflow-hidden"
+  fill="white"
+/>
+<Spotlight
+  className="absolute top-20 sm:right-10 h-[40vh] w-[40vh] sm:h-[80vh] sm:w-[50vh] "
+  fill="purple"
+/>
+<Spotlight
+  className="absolute top-20 left-30 h-[50vh] w-[40vh] sm:h-[80vh] sm:w-[50vh] sm:left-80"
+  fill="blue"
+/>
+
 
       <section className="md:flex md:items-center md:space-x-8 ">
         <div className="p-10">
