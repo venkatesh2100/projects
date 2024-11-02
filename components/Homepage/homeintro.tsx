@@ -10,17 +10,17 @@ import { NotebookTabs } from 'lucide-react';
 import { toast } from 'sonner';
 
 export const HomeIntro = () => {
-  const [isZoomed,setIsZoomed]=useState(false);
-  useEffect(()=>{
-    const checkZoom=()=>{
-      const zoomLevel=Math.round(window.devicePixelRatio*100);
-      setIsZoomed(zoomLevel===100);
-    }
+  const [isZoomed, setIsZoomed] = useState(false);
+  useEffect(() => {
+    const checkZoom = () => {
+      const zoomLevel = Math.round(window.devicePixelRatio * 100);
+      setIsZoomed(zoomLevel === 125);
+    };
     checkZoom();
-    window.addEventListener('resize',checkZoom);
+    window.addEventListener('resize', checkZoom);
 
-    return ()=>window.addEventListener('resize',checkZoom);
-  },[]);
+    return () => window.addEventListener('resize', checkZoom);
+  }, []);
 
   // const [isDarkMode, setIsDarkMode] = useState(true);//making always True
 
@@ -50,19 +50,21 @@ export const HomeIntro = () => {
   //   };
   // }, []);
 
-
-
   return (
-    <div className="border-black cursor-rock">
-        <Spotlight
-          className="-top-40 -left-10  md:-left-32 md:-top-20 h-screen"
-          fill="white"
-        />
-        <Spotlight
-          className="top-10 left-full h-[80vh] w-[50vh]"
-          fill="purple"
-        />
-        <Spotlight className="top-28 left-80 h-[80vh] w-[50vh]" fill="blue" />
+    <div className="border-black  cursor-rock">
+      <Spotlight
+        className="absolute top-10 left-0 h-[30vh] w-[20vh] sm:h-[80vh] sm:w-[50vh] sm:top-28 sm:-left-10 overflow-hidden"
+        fill="white"
+      />
+      <Spotlight
+        className="absolute top-20 right-0 h-[30vh] w-[20vh] sm:h-[80vh] sm:w-[50vh] sm:left-full"
+        fill="purple"
+      />
+      <Spotlight
+        className="absolute top-32 left-20 h-[30vh] w-[20vh] sm:h-[80vh] sm:w-[50vh] sm:left-80"
+        fill="blue"
+      />
+
       <section className="md:flex md:items-center md:space-x-8 ">
         <div className="p-10">
           {/* <h1 className="font-medium text-3xl md:text-5xl mb-4 text-black dark:text-white">
@@ -71,29 +73,29 @@ export const HomeIntro = () => {
             <span className="wave text-black dark:text-white">👋</span>
           </h1> */}
           <TextGenerateEffect
-              className="text-center pr-40 text-3xl md:text-4xl lg:text-5xl"
-              words="Hi 👋, I'm Venkatesh "
+            className="text-center pr-40 text-3xl md:text-4xl lg:text-5xl"
+            words="Hi 👋, I'm Venkatesh "
 
-              // highlightedWordIndex={5} // Specify the index of the word to highlight
-            />
+            // highlightedWordIndex={5} // Specify the index of the word to highlight
+          />
 
           <div className="col-span-3 max-w-2xl">
             <p className="px-0 text-lg text-left text-text2 md:leading-8 mb-4">
-              A software engineer from India, specializing in
-              JavaScript, TypeScript, React, and 69 other technologies.
-              Passionate about serverless architectures and full-stack
-              development, I’m always exploring new technologies. I do fullstack
-              and a bit of everything ❤️ All About living life at its best.
+              A software engineer from India, specializing in JavaScript,
+              TypeScript, React, and 69 other technologies. Passionate about
+              serverless architectures and full-stack development, I’m always
+              exploring new technologies. I do fullstack and a bit of everything
+              ❤️ All About living life at its best.
             </p>
             <div className="mb-4  flex ">
               <div>
-              <SocialLink />
+                <SocialLink />
               </div>
               <TextGenerateEffect
-              className="text-sm  pl-10 hidden md:block"
-              words="Designed 🛠️ for 80% Zoom checkout    "
-              // highlightedWordIndex={5} // Specify the index of the word to highlight
-            />
+                className="text-sm  pl-10 hidden md:block"
+                words="𝔇𝔢𝔰𝔦𝔤𝔫𝔢𝔡 🛠️ 𝔣𝔬𝔯 80% ℨ𝔬𝔬𝔪 𝔠𝔥𝔢𝔠𝔨𝔬𝔲𝔱    "
+                // highlightedWordIndex={5} // Specify the index of the word to highlight
+              />
             </div>
             <div className="flex-col justify-between">
               <HeroBtn />
@@ -112,28 +114,34 @@ export const HomeIntro = () => {
         {/* {isDarkMode
         ?  */}
         {/* ( */}
-          <div className={`relative ${isZoomed?'hidden':''}`}>
-            <div className={`pt-20 ${isZoomed?'hidden':''}` }><iframe src="https://giphy.com/embed/kmUvauX8TMWg0OsqKW" width="90%" height="100%" className="absolute" frameBorder="0"  allowFullScreen>
-            </iframe>
-            </div>
-            {/* <p><a href="https://giphy.com/stickers/Emoji-transparent-kmUvauX8TMWg0OsqKW"></a></p> */}
-            <div className="sm:text-9xl text-9xl  pt-10 ml-20 animate-bounce">🚀</div>
-
-            {/* <div className="sm:text-9xl text-9xl  pr-30 pt-1 0 animate-spin-slow">🌎</div>
-             */}
-
-
-
-
-            <div className="absolute  text-9xl animate-rise -top-20 left-60">
-              🌕
-            </div>
+        <div className={`relative ${isZoomed ? 'hidden' : ''}`}>
+          <div className={`pt-20 ${isZoomed ? 'hidden' : ''}`}>
+            <iframe
+              src="https://giphy.com/embed/kmUvauX8TMWg0OsqKW"
+              width="90%"
+              height="100%"
+              className="absolute"
+              frameBorder="0"
+              allowFullScreen
+            ></iframe>
           </div>
+          {/* <p><a href="https://giphy.com/stickers/Emoji-transparent-kmUvauX8TMWg0OsqKW"></a></p> */}
+          <div className="sm:text-9xl text-9xl  pt-10 ml-20 animate-bounce">
+            🚀
+          </div>
+
+          {/* <div className="sm:text-9xl text-9xl  pr-30 pt-1 0 animate-spin-slow">🌎</div>
+           */}
+
+          <div className="absolute  text-9xl animate-rise -top-20 left-60">
+            🌕
+          </div>
+        </div>
         {/* ) */}
         {/* : */}
-         {/* ( */}
-          {/* // Image (Only visible in light mode) */}
-          {/* <Image
+        {/* ( */}
+        {/* // Image (Only visible in light mode) */}
+        {/* <Image
             alt="profile pic"
             src="/luffy.jpeg"
             width={300}
@@ -145,43 +153,43 @@ export const HomeIntro = () => {
 
       {/* Custom Animations for Rocket and Moon */}
       <style jsx>{`
-    @keyframes rise {
-      0% {
-        transform: translateY(0);
-      }
-      100% {
-        transform: translateY(-60px); /* Move moon upwards */
-      }
-    }
-    .animate-rise {
-      animation: rise 2s infinite alternate;
-    }
+        @keyframes rise {
+          0% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(-60px); /* Move moon upwards */
+          }
+        }
+        .animate-rise {
+          animation: rise 2s infinite alternate;
+        }
 
-    @keyframes bounce {
-      0%,
-      100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-20px); /* Bounce effect for the rocket */
-      }
-    }
-    .animate-bounce {
-      animation: bounce 3s infinite;
-    }
+        @keyframes bounce {
+          0%,
+          100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-20px); /* Bounce effect for the rocket */
+          }
+        }
+        .animate-bounce {
+          animation: bounce 3s infinite;
+        }
 
-    @keyframes spin {
-      0% {
-        transform: rotate(90deg);
-      }
-      100% {
-        transform: rotate(-90deg);
-      }
-    }
-    .animate-spin-slow {
-      animation: spin 5s linear infinite; /* Slower spin for the earth */
-    }
-  `}</style>
+        @keyframes spin {
+          0% {
+            transform: rotate(90deg);
+          }
+          100% {
+            transform: rotate(-90deg);
+          }
+        }
+        .animate-spin-slow {
+          animation: spin 5s linear infinite; /* Slower spin for the earth */
+        }
+      `}</style>
     </div>
   );
 };

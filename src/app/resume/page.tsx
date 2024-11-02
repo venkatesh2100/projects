@@ -7,3 +7,7 @@ export default function ResumePage(){
     <div className="min-h-screen  md:mx-60"><ResumeComponent/></div>
   )
 }
+
+export const metadata={
+  title:'Venky | Resume'
+}
