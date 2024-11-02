@@ -60,12 +60,12 @@ const BlogComponent = () => {
 
   if (loading) {
     return (
-      <div className="flex flex-col items-center md:items-center mx-auto">
-        <div className="font-bold text-3xl md:text-4xl mb-6 mt-4 text-center md:ml-30">
+      <div className="flex flex-col items-center mx-auto p-4">
+        <h1 className="font-bold text-3xl mb-6 text-center">
           Some writeup related to my space
-        </div>
+        </h1>
         <SearchBar />
-        <div className="w-full md:flex md:justify-center md:flex-wrap">
+        <div className="w-full sm:flex space-x-10 items-center mt-6">
           {[...Array(3)].map((_, index) => (
             <BlogSkeleton key={index} />
           ))}
@@ -75,22 +75,22 @@ const BlogComponent = () => {
   }
 
   if (error) {
-    return <div className="text-center">Error: {error}</div>;
+    return <div className="text-center text-red-600">Error: {error}</div>;
   }
 
   const blogsByYear = groupBlogsByYear(blogs);
 
   return (
-    <div className="flex flex-col items-center md:items-center mx-auto">
-      <div className="font-bold text-3xl md:text-4xl mb-6 mt-4 text-center md:ml-30">
+    <div className="flex flex-col items-center mx-auto p-4">
+      <h1 className="font-bold text-3xl mb-6 text-center">
         Some writeup related to my space
-      </div>
+      </h1>
       <SearchBar />
-      <div className="w-full">
+      <div className="w-full mt-4">
         {Object.keys(blogsByYear).map((year) => (
           <div key={year} className="mb-8">
-            <h2 className="text-2xl font-semibold mb-4">{year}</h2>
-            <div className="md:flex md:flex-wrap md:justify-center">
+            <h2 className="text-2xl font-semibold mb-4 dark:text-white text-gray-800">{year}</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {blogsByYear[year].map((blog) => (
                 <BlogCard key={blog.id} blog={blog} />
               ))}

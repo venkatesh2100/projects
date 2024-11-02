@@ -11,10 +11,11 @@ import Projects from "../../../components/aboutme/Projects";
 // import Skills from "../../../components/aboutme/particles";
 import { FloatingNav } from "../../../components/aboutme/ui/FloatingNavbar";
 import { navItems } from "../../../components/aboutme/data";
+// import { title } from "process";
 // import { Timeline } from "../../../components/aboutme/ui/Timeline";
 // import Education from "../../../components/aboutme/Education";
 // import Links from "./componens/Links";
-import Contact from "../../../components/aboutme/Contact";
+// import Contact from "../../../components/aboutme/Contact";
 // import Navbar from "../../../components/navbar";
 // import { ModeToggle } from "./components/ui/ModeToggle";
 
@@ -30,7 +31,7 @@ export default function Home() {
         {/* <Skills /> */}
         <Projects />
         {/* <Education /> */}
-        <Contact />
+        {/* <Contact />  */}
       </div>
     </main>
   );
