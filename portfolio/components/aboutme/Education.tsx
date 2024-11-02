@@ -1,10 +1,10 @@
-import React from "react";
-import { Timeline } from "./ui/Timeline";
+import React from 'react';
+import { Timeline } from './ui/Timeline';
 
 const Education = () => {
   const data = [
     {
-      title: "2025",
+      title: '2025',
       content: (
         <div>
           <div className="flex">
@@ -15,35 +15,25 @@ const Education = () => {
             />
 
             <p className=" lg:mt-5 lg:text-lg   ">
-              Babu Banarasi Das Institute of Technology and Management, AKTU
+              JAWAHAR NAVAODAYA VIDYALA ,YNM{' '}
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 ml-5">
             <div>
               <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm lg:text-base font-normal">
-                Bachelor of Technology - BTech, Computer Science and Engineering
+                JAWAHAR NAVAODAYA VIDYALA ,YNM
               </p>
               <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm lg:text-base font-normal">
-                Nov 2021 - August 2025
+                Nov 2022 - August 2026
               </p>
             </div>
-            {/* <div>
-              <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm lg:text-base font-normal">
-                I am currently pursuing a Bachelor's degree in Computer Science
-                and Engineering at Babu Banarasi Das Institute of Technology and
-                Management, Lucknow. As a pre-final year student, I have
-                completed coursework in Data Structures, Algorithms,
-                Object-Oriented Programming, Database Management Systems,
-                Operating Systems, and Computer Networks.
-              </p>
-            </div> */}
           </div>
         </div>
       ),
     },
     {
-      title: "2021",
+      title: '2021',
       content: (
         <div className=" ">
           <div className="flex">
@@ -54,17 +44,17 @@ const Education = () => {
             />
 
             <p className=" lg:mt-5 lg:text-lg   ml-5">
-              Lucknow Public School, Lucknow
+              JAWAHAR NAVAODAYA VIDYALA ,YNM
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 ml-5">
             <div>
               <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm lg:text-base font-normal">
-                Intermediate - Science
+                Intermediate - MBIPC
               </p>
               <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm lg:text-base font-normal">
-                Grade-(89.8%)
+                Grade-(85.2%)
               </p>
             </div>
           </div>

@@ -26,7 +26,7 @@ const Hero = () => {
             </h2> */}
             <TextGenerateEffect
               className="text-center text-3xl md:text-4xl lg:text-5xl"
-              words="Hi 👋, I'm Venkatesh <>FullStack developer</>"
+              words="Hi 👋, I'm Venkatesh <>developer</>"
               // highlightedWordIndex={5} // Specify the index of the word to highlight
             />
 
