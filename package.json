@@ -1,5 +1,5 @@
 {
-  "name": "my-next-app",
+  "name": "plantera",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,13 +13,17 @@
     "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts"
   },
   "dependencies": {
+    "@prisma/client": "^5.21.1",
+    "bcrypt": "^5.1.1",
     "next": "14.2.5",
+    "next-auth": "^4.24.10",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.13.5",
-    "@cloudflare/workers-types": "^4.20241018.0",
+    "@cloudflare/workers-types": "^4.20241022.0",
+    "@types/bcrypt": "^5.0.2",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -27,9 +31,10 @@
     "eslint-config-next": "14.2.5",
     "eslint-plugin-next-on-pages": "^1.13.5",
     "postcss": "^8",
+    "prisma": "^5.21.1",
     "tailwindcss": "^3.4.1",
     "typescript": "^5",
-    "vercel": "^37.11.0",
-    "wrangler": "^3.81.0"
+    "vercel": "^37.12.1",
+    "wrangler": "^3.83.0"
   }
 }
