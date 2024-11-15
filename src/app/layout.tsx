@@ -23,7 +23,7 @@ const geistMono = localFont({
 // Default Metadata
 export const metadata: Metadata = {
   title: "VENKY",
-  description: "Auto-generated Portfolio",
+  description: "Portfolio",
 };
 
 export default function RootLayout({
