@@ -8,6 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        // Reference the correct CSS variable with the -- prefix
+        "plant-nav-text": "var(--plant-nav-text)",
+        "plant-footer-bg":"var(--plant-footer-bg)",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
