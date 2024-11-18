@@ -51,13 +51,13 @@ export const HomeIntro = () => {
   // }, []);
 
   return (
-    <div className="border-black cursor-rock">
+    <div className="border-black over-flow-x-hidden cursor-rock">
       <Spotlight
-        className="-top-40 -left-10  md:-left-32 md:-top-20 h-screen"
+        className="hidden sm:block top-40 -left-10  md:-left-32 md:-top-20 h-screen"
         fill="white"
       />
-      <Spotlight className="top-10 left-full h-[80vh] w-[50vh]" fill="purple" />
-      <Spotlight className="top-28 left-80 h-[80vh] w-[50vh]" fill="blue" />
+      <Spotlight className="hidden sm:block top-10 left-full h-[80vh] w-[50vh]" fill="purple" />
+      <Spotlight className="hidden sm:block top-28 left-80 h-[80vh] w-[50vh]" fill="blue" />
       <section className="md:flex md:items-center md:space-x-8 ">
         <div className="p-10">
           {/* <h1 className="font-medium text-3xl md:text-5xl mb-4 text-black dark:text-white">
@@ -117,26 +117,26 @@ export const HomeIntro = () => {
         {/* {isDarkMode
         ?  */}
         {/* ( */}
-        <div className={`relative ${isZoomed ? 'hidden' : ''}`}>
+        <div className={`relative ${isZoomed ? 'hidden' : '' }`}>
           <div className={`pt-20 ${isZoomed ? 'hidden' : ''}`}>
             <iframe
               src="https://giphy.com/embed/kmUvauX8TMWg0OsqKW"
               width="90%"
               height="100%"
-              className="absolute"
+              className="absolute sm:hidden"
               frameBorder="0"
               allowFullScreen
             ></iframe>
           </div>
           {/* <p><a href="https://giphy.com/stickers/Emoji-transparent-kmUvauX8TMWg0OsqKW"></a></p> */}
-          <div className="sm:text-9xl text-9xl  pt-10 ml-20 animate-bounce">
+          <div className="sm:text-9xl text-9xl sm:hidden  pt-10 ml-20 animate-bounce">
             🚀
           </div>
 
           {/* <div className="sm:text-9xl text-9xl  pr-30 pt-1 0 animate-spin-slow">🌎</div>
            */}
 
-          <div className="absolute  text-9xl animate-rise -top-20 left-60">
+          <div className="absolute sm:hidden text-9xl animate-rise -top-20 left-60">
             🌕
           </div>
         </div>
