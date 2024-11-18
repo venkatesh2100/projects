@@ -7,3 +7,6 @@ export default function Projectspage() {
     </div>
   );
 }
+export const metadata={
+  title:'Venky | Projects'
+}

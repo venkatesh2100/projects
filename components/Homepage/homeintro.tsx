@@ -6,7 +6,7 @@ import { TextGenerateEffect } from '../aboutme/ui/TextGenerateEffect';
 // import Image from 'next/image';
 import { SocialLink } from '../ui/socialink';
 import { HeroBtn } from './aboutme';
-import { NotebookTabs } from 'lucide-react';
+// import { NotebookTabs } from 'lucide-react';
 import { toast } from 'sonner';
 
 export const HomeIntro = () => {
@@ -104,7 +104,7 @@ export const HomeIntro = () => {
                   href="/blogs"
                   className="relative z-10 text-white dark:text-slate-300"
                   onClick={(e) => e.stopPropagation()} // Prevent conflict with button's onClick
-                > 
+                >
                   Check out my blog
                 </a>
               </button>
