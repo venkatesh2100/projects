@@ -1,15 +1,17 @@
-import { projects } from "./data";
-import React from "react";
-import { PinContainer } from "./ui/3dPin";
-import { FaLocationArrow } from "react-icons/fa6";
+import { projects } from './data';
+import React from 'react';
+import { PinContainer } from './ui/3dPin';
+import { FaLocationArrow } from 'react-icons/fa6';
 
 const Projects = () => {
   return (
     <div className="py-20 overflow-hidden mx-auto sm:px-10 px-5" id="project">
-      <h1 className="font-bold items-center text-3xl px-80">
-        A Small Selection of{" "}
-        <span className="text-purple">Recent Projects</span>
-      </h1>
+      <div className='flex justify-center '>
+        <h1 className="font-bold text-center px-10 sm:text-3xl sm:px-96 ">
+          A Small Selection of{' '}
+          <span className="text-purple-500">Recent Projects</span>
+        </h1>
+      </div>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
           <div
@@ -20,7 +22,7 @@ const Projects = () => {
               <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                  style={{ backgroundColor: "#13162D" }}
+                  style={{ backgroundColor: '#13162D' }}
                 >
                   <img src="/bg.png" alt="bgimg" />
                 </div>
@@ -38,8 +40,8 @@ const Projects = () => {
               <p
                 className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
                 style={{
-                  color: "#BEC1DD",
-                  margin: "1vh 0",
+                  color: '#BEC1DD',
+                  margin: '1vh 0',
                 }}
               >
                 {item.des}

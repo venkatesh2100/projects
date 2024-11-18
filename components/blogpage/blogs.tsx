@@ -65,7 +65,7 @@ const BlogComponent = () => {
           Some writeup related to my space
         </h1>
         <SearchBar />
-        <div className="w-full flex flex-col items-center mt-6">
+        <div className="w-full sm:flex space-x-10 items-center mt-6">
           {[...Array(3)].map((_, index) => (
             <BlogSkeleton key={index} />
           ))}
