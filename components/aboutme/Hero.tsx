@@ -36,7 +36,7 @@ const Hero = () => {
             <RandomQuote />
             <div>
               <MagicButton
-                url="https://drive.google.com/file/d/18yJnNM8T8-KR6oW4USoSXKmofNBbYPXl/view?usp=sharing"
+                url="https://drive.google.com/file/d/12On21ITk5sjUdR78xcMG5v-pNwNQ1RWi/view?usp=sharing"
                 text="Download Resume"
               />
             </div>
