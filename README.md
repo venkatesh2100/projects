@@ -14,9 +14,12 @@
   ## Run locally
 
   **using yarn**
+    install dependencies
     ```bash
     yarn install 
     ```
+
+    run locally
     ```bash
     yarn dev
     ```
