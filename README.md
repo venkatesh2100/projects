@@ -1,3 +1,16 @@
+## Prerequisites
+
+Before running the project, ensure the following are installed on your machine:
+
+- **Node.js** (14.x or higher)  
+  [Download Node.js](https://nodejs.org/)
+  
+- **npm** or **yarn**  
+  npm is included with Node.js. To install yarn globally:
+  ```bash
+  npm install -g yarn
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
