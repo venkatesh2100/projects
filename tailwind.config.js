@@ -7,7 +7,9 @@ export default {
   theme: {
     extend: {
       colors:{
-        backgroundColor: '#F8F5EE'
+        backgroundColor: '#F8F5EE',
+        footerColor: '#282828',
+        footerSociallink: '#FF7019'
       },
       fontFamily: {
         'paytone': ['Paytone One', 'Arial', 'Helvetica', 'sans-serif'],

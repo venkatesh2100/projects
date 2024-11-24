@@ -15,6 +15,7 @@
 
   **using yarn**
     install dependencies
+
     ```bash
     yarn install 
     ```
@@ -31,7 +32,6 @@
     ```bash
     yarn dev
     ```
-
 
 # React + TypeScript + Vite
 

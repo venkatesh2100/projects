@@ -1,3 +1,4 @@
+import { Button } from "./Button";
 import { Effects } from "./Effects";
 
 
@@ -16,9 +17,7 @@ export function SectionHero(){
                     <Effects/>
                 </div>
                 <div className="mt-12">
-                    <button className="bg-[#FF7119] text-white font-medium px-11 py-4 rounded-tr-full rounded-tl-none rounded-bl-full rounded-br-full hover:shadow-lg">
-                        Learn More
-                    </button>
+                    <Button text="Learn more"/>
                 </div>
             </div>
             <div className="text-3xl">
