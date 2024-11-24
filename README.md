@@ -9,16 +9,16 @@
     npm is included with Node.js. To install yarn globally:
     ```bash
     npm install -g yarn
+    ```
 
   ## Run locally
-  
-  **using npm**
-    ```bash
-    npm install 
-    
 
+  **using yarn**
     ```bash
-    npm run dev
+    yarn install 
+    ```
+    ```bash
+    yarn dev
     ```
 
   **using yarn**
