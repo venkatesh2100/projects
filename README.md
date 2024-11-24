@@ -14,16 +14,19 @@
   **using npm**
     ```bash
     npm install 
+    ```
 
     ```bash
     npm run dev
+    ```
 
   **using yarn**
     ```bash
     yarn install 
-
+    ```
     ```bash
-    npm dev
+    yarn dev
+    ```
 
   Here's the complete README.md file containing all essential sections:
 
