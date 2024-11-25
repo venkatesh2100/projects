@@ -68,7 +68,9 @@ export function Footer() {
                                         Subscribe
                                     </button>
                                 </div>
-                                <div>other things asdfas df asdf asdf asdf asd fasdf</div>
+                                <div>
+                                    here
+                                </div>
                             </div>
                         </div>
                     </div>

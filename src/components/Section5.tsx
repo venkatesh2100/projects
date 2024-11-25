@@ -19,8 +19,8 @@ export function Section5() {
                     hi ther
                 </div>
             </div>
-            <div>
-                <img src="https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/07/bottom_grey_wave_home_04.png" alt="" />
+            <div className="">
+                <img src="https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/07/bottom_grey_wave_home_04.png" alt="" className="flex w-full bg-no-repeat"/>
             </div>
         </div>
     );
