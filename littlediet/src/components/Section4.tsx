@@ -11,7 +11,7 @@ export function Farm() {
     return (
         <div className="bg-backgroundColor">
             <div className="flex justify-between pt-10">
-                <div className="ml-72 mt-40 mr-10">
+                <div className="sm:ml-72 ml-20 mt-40 mr-10">
                     <div>
                         <img
                             src="https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/04/green_leaf.png"

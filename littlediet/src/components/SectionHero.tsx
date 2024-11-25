@@ -5,8 +5,8 @@ import { HeroRight } from "./HeroRight";
 
 export function SectionHero(){
     return (
-    <div className="h-auto bg-backgroundColor">
-        <div className="flex-row justify-between">
+    <div className="h-auto w-full bg-backgroundColor">
+        <div className="flex-row md:flex justify-between">
             <HeroLeft/>
             <HeroRight/>
         </div>
