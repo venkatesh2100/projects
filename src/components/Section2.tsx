@@ -2,7 +2,7 @@ import React from "react";
 
 const FeatureCircle: React.FC = () => {
   return (
-    <div className="flex flex-col items-center bg-backgroundColor py-72 relative">
+    <div className="flex flex-col items-center bg-backgroundColor pt-60 p-24 relative">
       {/* Center Image */}
       <div className="absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] z-20">
         <img
