@@ -1,5 +1,5 @@
 import { Button } from "./Button";
-import { Effects } from "./Effects";
+import { EffectsCard } from "./EffectsCard";
 
 
 export function SectionHero(){
@@ -14,7 +14,7 @@ export function SectionHero(){
                     Fruits & Veggies for Little Ones
                 </div>
                 <div>
-                    <Effects/>
+                    <EffectsCard imgUrl="https://i.postimg.cc/xCnbWM0L/hero2.png" title="Great ingredients" titleColor="text-green-500" description="We only use organic ingredients – no nasties! It’s guilt-free goodness!" descriptionWidth="max-w-xs"/>
                 </div>
                 <div className="mt-12">
                     <Button text="Learn more"/>
