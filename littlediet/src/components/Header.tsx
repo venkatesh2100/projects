@@ -1,7 +1,13 @@
 import { useState } from "react";
+import { Button } from "./Button";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const handleOrderClick = () => {
+        const phoneNumber = "9032221070"; // Replace with your WhatsApp number
+        const message = encodeURIComponent("Hello, I am interested in the product. Please provide more details.");
+        window.location.href = `https://wa.me/${phoneNumber}?text=${message}`;
+    };
 
   return (
     <div className="w-full bg-gradient-to-r   to-pink-500 bg-backgroundColor  relative shadow-md">
@@ -24,13 +30,13 @@ const Header = () => {
         </div>
 
         {/* Search Bar */}
-        <div className="hidden lg:flex items-center w-1/3">
+        <div className="hidden lg:flex  items-center w-1/3">
           <input
             type="text"
             placeholder="Search for products..."
             className="w-full px-4 py-2 rounded-lg text-black outline-none"
           />
-          <button className="ml-2 px-4 py-2 bg-yellow-300 text-black rounded-lg shadow-md hover:bg-yellow-400">
+          <button className="ml-2 px-4 mr-10 py-2 bg-yellow-300 text-black rounded-lg shadow-md hover:bg-yellow-400">
             Search
           </button>
         </div>
@@ -68,7 +74,7 @@ const Header = () => {
             </a>
           </div>
           <div>
-            <a href="/blog" className="block lg:inline hover:text-yellow-300">
+            <a href="/blog" className="block lg:inline  hover:text-yellow-300">
               Blog
             </a>
           </div>
@@ -76,23 +82,23 @@ const Header = () => {
 
         {/* Cart and Profile */}
         <div className="hidden lg:flex items-center gap-6">
-          <div className="relative">
+          {/* <div className="relative">
             <a
               href="/cart"
-              className="flex items-center gap-2 px-4 py-2 bg-yellow-300 text-black rounded-lg shadow-md hover:bg-yellow-400"
+              className="flex items-center  gap-2 px-1  py-2 bg-yellow-300 text-black rounded-lg shadow-md  hover:bg-yellow-400"
             >
               <span>Cart</span>
               <div className="bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
                 3
               </div>
             </a>
-          </div>
-          <a
+          </div> */}
+          {/* <a
             href="/profile"
             className="px-4 py-2 bg-white text-black rounded-lg shadow-md hover:bg-gray-200"
-          >
-            Sign In
-          </a>
+          > */}
+         <Button text="Order Now" onClick={handleOrderClick} />
+          {/* </a> */}
         </div>
       </div>
     </div>
