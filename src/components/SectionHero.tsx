@@ -6,16 +6,16 @@ export function SectionHero() {
     <div className="bg-backgroundColor">
       <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start">
         {/* Left Section */}
-        <div className="lg:ml-40 lg:mt-12 text-center lg:text-left ">
+        <div className="lg:ml-40 lg:pl-48 lg:mt-12 text-center lg:text-left ">
           <div>
             <img
               src="https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/04/green_leaf.png"
               alt="Green Leaf"
-              className="mx-auto lg:mx-0"
+              className="mx-6"
               width={80}
             />
           </div>
-          <div className="text-4xl sm:text-5xl lg:text-7xl font-paytone max-w-sm mt-6 ml-6 text-start">
+          <div className="text-4xl sm:text-5xl lg:text-7xl font-paytone max-w-3xl mt-6 ml-6 text-start">
             Fruits & Veggies for Little Ones
           </div>
           <div className="mt-6">
