@@ -11,6 +11,7 @@ export function Footer() {
                     <img
                         src="https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/07/top_grey_wave_home_04.png"
                         alt=""
+                        className="w-full"
                     />
                 </div>
                 <div className="mx-80 text-white">
