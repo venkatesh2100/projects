@@ -4,6 +4,7 @@ import { SectionHero } from "../components/SectionHero";
 import { SectionProducts } from "../components/Section3";
 import { Footer } from "../components/Footer";
 import { Farm } from "../components/Section4";
+import { SectionReviews } from "../components/SectionReviews";
 
 export function Home() {
 
@@ -14,6 +15,7 @@ export function Home() {
       <FeatureCircle/>
       <SectionProducts/>
       <Farm/>
+      <SectionReviews/>
       <Footer/>
     </div>
   )

@@ -14,7 +14,10 @@ export default {
         textColorgreen: '#F3812D'
       },
       fontFamily: {
-        'paytone': ['Paytone One', 'Arial', 'Helvetica', 'sans-serif'],
+        'paytone': ['Paytone One', ],
+        'sans-serif': ['sans-serif'],
+        'arial': ['Arial'],
+        'helvetica': ['Helvetica']
       },
     },
   },

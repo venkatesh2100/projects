@@ -40,3 +40,8 @@ export function EffectsCard({imgUrl, title, titleColor, description, description
 // section4 images
 // https://i.postimg.cc/QCMKMDKt/section1.png
 // https://i.postimg.cc/3Nb44q2Z/section2.png
+
+
+// website images
+// https://i.postimg.cc/PxTkqhKZ/Background.png
+// https://i.postimg.cc/43khyWS3/Comma.png

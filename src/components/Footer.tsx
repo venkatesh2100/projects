@@ -2,7 +2,7 @@ export function Footer() {
     return (
         <div>
             <div
-                className="relative bg-footerColor bg-cover bg-center"
+                className="bg-footerColor bg-cover bg-center"
                 style={{
                     backgroundImage: `url('https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/04/footer_background_03.jpg')`,
                 }}
