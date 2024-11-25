@@ -1,17 +1,7 @@
-import React from "react";
-
-interface ButtonProps {
-  text: string;
-  onClick?: () => void; // Define onClick as an optional prop
+export function Button({text}: {text: string}){
+  return <div className="mt-10">
+      <button className="bg-[#FF7119] text-white font-medium px-11 py-4 rounded-tr-full rounded-tl-none rounded-bl-full rounded-br-full hover:shadow-lg">
+          {text}
+      </button>
+  </div>
 }
-
-export const Button: React.FC<ButtonProps> = ({ text, onClick }) => {
-  return (
-    <button
-      onClick={onClick}
-      className="bg-yellow-300 text-black px-6 py-3 rounded-lg hover:bg-yellow-400"
-    >
-      {text}
-    </button>
-  );
-};

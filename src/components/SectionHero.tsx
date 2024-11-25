@@ -6,7 +6,7 @@ export function SectionHero() {
     <div className="bg-backgroundColor">
       <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start">
         {/* Left Section */}
-        <div className="lg:ml-16 lg:mt-12 text-center lg:text-left">
+        <div className="lg:ml-40 lg:mt-12 text-center lg:text-left ">
           <div>
             <img
               src="https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/04/green_leaf.png"
@@ -27,7 +27,7 @@ export function SectionHero() {
               descriptionWidth="max-w-xs"
             />
           </div>
-          <div className="mt-8">
+          <div className="ml-8 text-start">
             <Button text="Learn more" />
           </div>
         </div>
@@ -44,5 +44,3 @@ export function SectionHero() {
     </div>
   );
 }
-
-// font-family: "Paytone One", Arial, Helvetica, sans-serif;
