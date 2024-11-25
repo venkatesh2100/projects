@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div className="w-full bg-backgroundColor relative">
+    <div className="sm:w-full bg-backgroundColor  relative">
       <div className="absolute -top-1">
         <img
           src="https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/07/White_wave_background.png"
@@ -12,7 +12,7 @@ const Header = () => {
 
       <div className="relative z-10 flex justify-between flex-row mx-auto p-5 max-w-6xl">
         <div>
-          <div className="text-2xl font-bold">Bambino</div>
+          <div className="text-2xl font-bold">Little Diet</div>
         </div>
 
         <div className="flex flex-row gap-16">
