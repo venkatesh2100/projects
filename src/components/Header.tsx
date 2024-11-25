@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Button } from "./Button";
+// const handleOrderClick = () => {
+//       const phoneNumber = "9032221070"; // Replace with your WhatsApp number
+//       const message = encodeURIComponent("Hello, I am interested in the product. Please provide more details.");
+//       window.location.href = `https://wa.me/${phoneNumber}?text=${message}`;
+// };
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const handleOrderClick = () => {
-        const phoneNumber = "9032221070"; // Replace with your WhatsApp number
-        const message = encodeURIComponent("Hello, I am interested in the product. Please provide more details.");
-        window.location.href = `https://wa.me/${phoneNumber}?text=${message}`;
-    };
 
   return (
     <div className="w-full bg-gradient-to-r   to-pink-500 bg-backgroundColor  relative shadow-md">
@@ -80,25 +80,8 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Cart and Profile */}
         <div className="hidden lg:flex items-center gap-6">
-          {/* <div className="relative">
-            <a
-              href="/cart"
-              className="flex items-center  gap-2 px-1  py-2 bg-yellow-300 text-black rounded-lg shadow-md  hover:bg-yellow-400"
-            >
-              <span>Cart</span>
-              <div className="bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-                3
-              </div>
-            </a>
-          </div> */}
-          {/* <a
-            href="/profile"
-            className="px-4 py-2 bg-white text-black rounded-lg shadow-md hover:bg-gray-200"
-          > */}
-         <Button text="Order Now" onClick={handleOrderClick} />
-          {/* </a> */}
+         <Button text="Order Now"/>
         </div>
       </div>
     </div>
