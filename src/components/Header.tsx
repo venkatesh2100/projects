@@ -29,18 +29,6 @@ const Header = () => {
           </div>
         </div>
 
-        {/* Search Bar */}
-        <div className="hidden lg:flex  items-center w-1/3">
-          <input
-            type="text"
-            placeholder="Search for products..."
-            className="w-full px-4 py-2 rounded-lg text-black outline-none"
-          />
-          <button className="ml-2 px-4 mr-10 py-2 bg-yellow-300 text-black rounded-lg shadow-md hover:bg-yellow-400">
-            Search
-          </button>
-        </div>
-
         {/* Hamburger Button */}
         <button
           className="lg:hidden flex flex-col justify-between w-8 h-6"
