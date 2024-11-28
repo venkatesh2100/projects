@@ -1,6 +1,16 @@
 import { Button } from "./Button";
 
 export function SectionProducts() {
+
+
+    const handleClick = () => {
+        const phoneNumber = "9032221070";
+        const message = encodeURIComponent(
+          "Hello, I am interested in the product. Please provide more details."
+        );
+        window.location.href = `https://wa.me/${phoneNumber}?text=${message}`;
+    };
+
     return (
         <div className="bg-backgroundColor pt-32">
             <div className="flex flex-col lg:flex-row">
@@ -43,7 +53,7 @@ export function SectionProducts() {
 
                     {/* Button */}
                     <div className="items-start">
-                        <Button text="Our Products" />
+                        <Button text="Our Products" onClick={handleClick} />
                     </div>
                 </div>
             </div>
