@@ -55,7 +55,7 @@ const FeatureCircle: React.FC = () => {
   return (
     <div className="flex flex-col items-center bg-backgroundColor pt-60 p-24 relative">
       {/* Center Image */}
-      <div className="absolute top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] z-20 hover:scale-110 transition-transform duration-500">
+      <div className="absolute hidden sm:block top-[50%] left-[50%] transform -translate-x-[50%] -translate-y-[50%] z-20 hover:scale-110 transition-transform duration-500">
         <img
           src="https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/07/image_01_home_04-600x540.png"
           alt="Center Content"
