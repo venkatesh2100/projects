@@ -64,11 +64,11 @@ const FeatureCircle: React.FC = () => {
       </div>
 
       {/* Features */}
-      <div className="relative w-full h-auto mt-[-220px] flex flex-col justify-center lg:w-[800px] lg:h-[800px] lg:flex-none">
+      <div className="relative w-full h-auto mt-[-220px]  flex flex-col   lg:w-[800px] lg:h-[800px] lg:flex-none">
         {features.map((feature) => (
           <div
             key={feature.id}
-            className={`group relative flex items-center justify-center w-48 h-48 ${feature.bgColor} rounded-full text-white text-center shadow-lg ${feature.position} transition-transform duration-300 ease-in-out overflow-hidden hover:scale-110 hover:animate-morph`}
+            className={`group relative mb-10 flex items-center justify-center w-48 h-48 ${feature.bgColor} rounded-full text-white text-center shadow-lg ${feature.position} transition-transform duration-300 ease-in-out overflow-hidden hover:scale-110 hover:animate-morph`}
           >
             {/* Default Content */}
             <div className="absolute flex flex-col items-center justify-center w-full h-full z-10 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
