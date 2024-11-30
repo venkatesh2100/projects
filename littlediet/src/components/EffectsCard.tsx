@@ -17,10 +17,10 @@ export function EffectsCard({imgUrl, title, titleColor, description, description
                 </div>
                 <hr className="h-24 w-[1px] bg-slate-950" />
                 <div className="px-6 py-1">
-                    <div className={`text-2xl ${titleColor}`}>
+                    <div className={`text-2xl text-start ${titleColor}`}>
                         {title}
                     </div>
-                    <div className={`${descriptionWidth} pt-2`}>
+                    <div className={`${descriptionWidth} text-start pt-2`}>
                         {description}
                     </div>
                 </div>
