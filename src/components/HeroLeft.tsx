@@ -3,8 +3,8 @@ import { EffectsCard } from "./EffectsCard";
 
 export function HeroLeft(){
     return (
-    <div className="flex justify-between">
-        <div className="ml-6 mt-32 md:96">
+    <div className="">
+        <div className="ml-6 mt-32">
             <div>
                 <img src="https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/04/green_leaf.png" alt="" width={80}/>
             </div>
