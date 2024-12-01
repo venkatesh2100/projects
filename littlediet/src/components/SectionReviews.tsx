@@ -7,7 +7,7 @@ export function SectionReviews() {
             <div
                 className="bg-backgroundColor bg-no-repeat bg-center"
                 style={{
-                    backgroundImage: `url('https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/07/background_02_home_04.png')`,
+                    backgroundImage: `url('/public/background_02_home_04.png')`,
                 }}
             >
                 {/* Responsive Background Sizing */}

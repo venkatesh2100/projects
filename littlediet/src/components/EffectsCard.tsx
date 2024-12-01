@@ -28,20 +28,3 @@ export function EffectsCard({imgUrl, title, titleColor, description, description
         </div>
     </div>
 }
-
-
-// for hero tag max-w-xs
-// for hero images Links
-// https://i.postimg.cc/Jhbk6PW1/hero1.png
-// https://i.postimg.cc/xCnbWM0L/hero2.png
-// https://i.postimg.cc/ydjSBxdt/hero3.png
-
-
-// section4 images
-// https://i.postimg.cc/QCMKMDKt/section1.png
-// https://i.postimg.cc/3Nb44q2Z/section2.png
-
-
-// website images
-// https://i.postimg.cc/PxTkqhKZ/Background.png
-// https://i.postimg.cc/43khyWS3/Comma.png

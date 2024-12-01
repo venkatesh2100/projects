@@ -9,21 +9,21 @@ export function SectionHero() {
         <div className="lg:col-span-2 text-center lg:text-left lg:pl-48 lg:mt-12">
           <div>
             <img
-              src="https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/04/green_leaf.png"
+              src="/public/green_leaf.png"
               alt="Green Leaf"
               className="mx-6 animate-bounce"
               width={80}
             />
           </div>
           <div className="text-4xl sm:text-5xl lg:text-7xl font-paytone max-w-3xl mt-6 ml-6 text-start">
-            Fruits & Veggies for Little Ones
+            Freshly prepared UGGU for Little Ones
           </div>
           <div className="mt-6">
             <EffectsCard
-              imgUrl="https://i.postimg.cc/xCnbWM0L/hero2.png"
+              imgUrl="/public/leafimg.png"
               title="Great ingredients"
               titleColor="text-green-500"
-              description="We only use organic ingredients – no nasties! It’s guilt-free goodness!"
+              description="We only use organic ingredients – no nasties!"
               descriptionWidth="max-w-xs"
             />
           </div>
