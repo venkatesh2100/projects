@@ -28,7 +28,7 @@ export function SectionProducts() {
                     {/* Green Leaf Icon */}
                     <div>
                         <img
-                            src="/public/green_leaf.png"
+                            src="/green_leaf.png"
                             alt="green leaf"
                             className="w-12 h-12 lg:w-auto lg:h-auto"
                         />

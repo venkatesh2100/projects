@@ -15,7 +15,7 @@ export function Farm() {
           {/* Green Leaf Icon */}
           <div>
             <img
-              src="/public/green_leaf.png"
+              src="/green_leaf.png"
               alt="Green Leaf"
               className="w-12 h-12 lg:w-auto lg:h-auto"
             />
@@ -29,14 +29,14 @@ export function Farm() {
           {/* Effects Cards */}
           <div className="space-y-6">
             <EffectsCard
-              imgUrl="/public/trusted img.png"
+              imgUrl="/trusted img.png"
               title="TRUSTED PARTNERS"
               titleColor="font-Arial text-textColorgreen"
               description="All our ingredients come farms who are certified organic. We can track and trace each ingredient back to its roots."
               descriptionWidth="max-w-xl"
             />
             <EffectsCard
-              imgUrl="/public/water drops.png"
+              imgUrl="/water drops.png"
               title="TASTE, COLOUR & TEXTURE"
               titleColor="font-Arial text-textColorgreen"
               description="We use cold-pressure, not heat, to lock in the nutrients, vitamins, colour and natural flavour."
