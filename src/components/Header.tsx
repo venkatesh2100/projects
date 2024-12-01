@@ -19,13 +19,13 @@ const Header = () => {
   };
 
   return (
-    <div className="w-full realtive h-16 bg-gradient-to-r to-pink-500 bg-backgroundColor fixed shadow-md">
+    <div className="w-full realtive h-20 bg-gradient-to-r to-pink-500 bg-backgroundColor fixed shadow-md">
       {/* Background Image */}
       <div className="  flex justify-between items-center mx-auto p-5 max-w-6xl">
         {/* Logo */}
         <div>
-          <div className="text-3xl font-extrabold tracking-wide drop-shadow-lg">
-            Little<span className="text-yellow-300">Diet</span>
+          <div className="w-36">
+            <img src="/public/logo.png" alt="logo" />
           </div>
         </div>
 

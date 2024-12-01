@@ -40,7 +40,7 @@ const FeatureCircle: React.FC = () => {
     <div className="flex flex-col items-center bg-backgroundColor pt-60 p-24 relative">
        <div>
             <img
-              src="https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/04/green_leaf.png"
+              src="/public/green_leaf.png"
               alt="Green Leaf"
               className="mx-6 animate-bounce"
               width={80}
@@ -50,7 +50,7 @@ const FeatureCircle: React.FC = () => {
       {/* Center Image */}
       <div className="absolute hidden sm:block top-[50%] left-[45%] transform -translate-x-[50%] -translate-y-[50%] z-20 hover:scale-110 transition-transform duration-500">
         <img
-          src="/public/uggu-Photoroom.png"
+          src="/uggu-Photoroom.png"
           alt="Center Content"
           className="w-[800px] h-[600px] "
         />

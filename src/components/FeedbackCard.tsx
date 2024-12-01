@@ -4,7 +4,7 @@ export function FeedbackCard() {
       {/* Quotation Mark */}
       <div>
         <img
-          src="https://i.postimg.cc/43khyWS3/Comma.png"
+          src="/public/Comma.png"
           alt="Comma"
           className="w-12 h-auto lg:w-16"
         />
@@ -27,7 +27,7 @@ export function FeedbackCard() {
         {/* User Image */}
         <div>
           <img
-            src="https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/04/testimonials_06.jpg"
+            src="/public/testimonials_06.jpg"
             width={60}
             className="rounded-full lg:w-20"
             alt="User"

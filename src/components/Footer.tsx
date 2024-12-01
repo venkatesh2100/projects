@@ -4,12 +4,12 @@ export function Footer() {
       <div
         className="bg-footerColor bg-cover bg-center"
         style={{
-          backgroundImage: `url('https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/04/footer_background_03.jpg')`,
+          backgroundImage: `url('public/footer_background_03.jpg')`,
         }}
       >
         <div className="mb-24">
           <img
-            src="https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/07/top_grey_wave_home_04.png"
+            src="/public/top_grey_wave_home_04.png"
             alt=""
             className="w-full"
           />
