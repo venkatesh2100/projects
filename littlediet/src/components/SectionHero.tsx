@@ -9,7 +9,7 @@ export function SectionHero() {
         <div className="lg:col-span-2 text-center lg:text-left lg:pl-48 lg:mt-12">
           <div>
             <img
-              src="/public/green_leaf.png"
+              src="/green_leaf.png"
               alt="Green Leaf"
               className="mx-6 animate-bounce"
               width={80}
@@ -20,7 +20,7 @@ export function SectionHero() {
           </div>
           <div className="mt-6">
             <EffectsCard
-              imgUrl="/public/leafimg.png"
+              imgUrl="/leafimg.png"
               title="Great ingredients"
               titleColor="text-green-500"
               description="We only use organic ingredients – no nasties!"
@@ -35,7 +35,7 @@ export function SectionHero() {
         {/* Right Section - Image (1/3) */}
         <div className="lg:col-span-1 items-center mt-8 lg:mt-10 shadow-sm flex justify-center lg:justify-end">
           <img
-            src="/public/homepage.png"
+            src="/homepage.png"
             alt="Hero Image"
             className="w-full "
           />
