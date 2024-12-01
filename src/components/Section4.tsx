@@ -29,14 +29,14 @@ export function Farm() {
           {/* Effects Cards */}
           <div className="space-y-6">
             <EffectsCard
-              imgUrl="https://i.postimg.cc/QCMKMDKt/section1.png"
+              imgUrl="/public/trusted img.png"
               title="TRUSTED PARTNERS"
               titleColor="font-Arial text-textColorgreen"
               description="All our ingredients come farms who are certified organic. We can track and trace each ingredient back to its roots."
               descriptionWidth="max-w-xl"
             />
             <EffectsCard
-              imgUrl="https://i.postimg.cc/3Nb44q2Z/section2.png"
+              imgUrl="/public/water drops.png"
               title="TASTE, COLOUR & TEXTURE"
               titleColor="font-Arial text-textColorgreen"
               description="We use cold-pressure, not heat, to lock in the nutrients, vitamins, colour and natural flavour."
