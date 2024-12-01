@@ -26,7 +26,7 @@ const FAQSection = () => {
     <div className="flex items-center justify-center bg-backgroundColor">
       <div className="max-w-4xl w-full py-10 px-4 bg-backgroundColor rounded-md">
         <div className='flex justify-center'>
-            <img src="/public/green_leaf.png" alt="" />
+            <img src="/green_leaf.png" alt="" />
         </div>
         <h2 className="text-3xl font-bold text-center mb-8">Your Questions, Answered</h2>
         <div className="space-y-4">

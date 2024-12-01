@@ -40,7 +40,7 @@ const FeatureCircle: React.FC = () => {
     <div className="flex flex-col items-center bg-backgroundColor pt-60 p-24 relative">
        <div>
             <img
-              src="/public/green_leaf.png"
+              src="/green_leaf.png"
               alt="Green Leaf"
               className="mx-6 animate-bounce"
               width={80}

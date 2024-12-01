@@ -12,13 +12,13 @@ export function Section5() {
             <div
                 className="flex w-full h-screen bg-no-repeat"
                 style={{
-                    backgroundImage: `url('/public/top_grey_wave_home_04.png')`
+                    backgroundImage: `url('/top_grey_wave_home_04.png')`
                 }}
             >
-            
+
             </div>
             <div className="">
-                <img src="/public/bottom_grey_wave_home_04.png" alt="" className="flex w-full bg-no-repeat"/>
+                <img src="/bottom_grey_wave_home_04.png" alt="" className="flex w-full bg-no-repeat"/>
             </div>
         </div>
     );
