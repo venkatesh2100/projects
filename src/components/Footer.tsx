@@ -4,12 +4,12 @@ export function Footer() {
       <div
         className="bg-footerColor bg-cover bg-center"
         style={{
-          backgroundImage: `url('public/footer_background_03.jpg')`,
+          backgroundImage: `url('/footer_background_03.jpg')`,
         }}
       >
         <div className="mb-24">
           <img
-            src="/public/top_grey_wave_home_04.png"
+            src="/top_grey_wave_home_04.png"
             alt=""
             className="w-full"
           />
