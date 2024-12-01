@@ -28,8 +28,8 @@ export function SectionProducts() {
                     {/* Green Leaf Icon */}
                     <div>
                         <img
-                            src="https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/04/green_leaf.png"
-                            alt=""
+                            src="/public/green_leaf.png"
+                            alt="green leaf"
                             className="w-12 h-12 lg:w-auto lg:h-auto"
                         />
                     </div>
