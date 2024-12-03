@@ -40,7 +40,7 @@ const FAQSection = () => {
                 className="w-full flex justify-between items-center p-6 text-left focus:outline-none"
               >
                 <div className='flex'>
-                  <img src="/questionIcon.png" alt="" className='w-7 h-7'/>
+                  <img src="/questionIcon.png" alt="" className='w-5 h-5 mt-1'/>
                   <span className="text-lg font-medium pl-2">{faq.question}</span>
                 </div>
                 <span className="text-xl">
