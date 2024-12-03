@@ -33,13 +33,16 @@ const FAQSection = () => {
           {FAQData.map((faq, index) => (
             <div
               key={index}
-              className={`border rounded-md overflow-hidden ${activeIndex === index ? 'bg-backgroundColor' : 'bg-backgroundColor'}`}
+              className="border rounded-2xl overflow-hidden hover:bg-slate-100"
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full flex justify-between items-center p-4 text-left focus:outline-none"
+                className="w-full flex justify-between items-center p-6 text-left focus:outline-none"
               >
-                <span className="text-lg font-medium">{faq.question}</span>
+                <div className='flex'>
+                  <img src="/questionIcon.png" alt="" className='w-7 h-7'/>
+                  <span className="text-lg font-medium pl-2">{faq.question}</span>
+                </div>
                 <span className="text-xl">
                   {activeIndex === index ? '−' : '+'}
                 </span>
