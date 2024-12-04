@@ -4,7 +4,7 @@ export function FeedbackCard() {
       {/* Quotation Mark */}
       <div>
         <img
-          src="/public/Comma.png"
+          src="/Comma.png"
           alt="Comma"
           className="w-12 h-auto lg:w-16"
         />
@@ -22,12 +22,12 @@ export function FeedbackCard() {
       <div className="flex flex-col sm:flex-row items-center sm:items-start mt-6">
         {/* User Image */}
         <div>
-          {/* <img
-            // src="/public/testimonials_06.jpg"
+          <img
+            src="/testimonials_06.jpg"
             width={60}
             className="rounded-full lg:w-20"
             alt="User"
-          /> */}
+          /> 
         </div>
 
         {/* User Details */}
