@@ -25,7 +25,7 @@ const Header = () => {
         {/* Logo */}
         <div>
           <div className="w-36">
-            <img src="/src/assets/logo.png" alt="logo" />
+            <img src="/logo.png" alt="logo" />
           </div>
         </div>
 
@@ -42,7 +42,7 @@ const Header = () => {
 
         {/* Menu */}
         <div
-          className={`lg:flex flex-col lg:flex-row gap-6 lg:gap-16 absolute lg:static top-16 left-0 w-full lg:w-auto bg-gradient-to-r lg:bg-transparent p-5 lg:p-0 shadow-lg lg:shadow-none transition-all duration-300 bg-backgroundColorease-in-out ${
+          className={`lg:flex flex-col text-xl lg:flex-row gap-6 lg:gap-16 absolute lg:static top-16 left-0 w-full lg:w-auto bg-gradient-to-r lg:bg-transparent p-5 lg:p-0 shadow-lg lg:shadow-none transition-all duration-300 bg-backgroundColorease-in-out ${
             isMenuOpen ? "block" : "hidden"
           }`}
         >
