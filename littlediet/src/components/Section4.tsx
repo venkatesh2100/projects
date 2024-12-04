@@ -23,23 +23,23 @@ export function Farm() {
 
           {/* Heading */}
           <div className="font-paytone items-start text-5xl lg:text-6xl text-textColorblack my-4 lg:text-left">
-            From farm to spoon
+          Nurturing Your Baby's Growth and Development
           </div>
 
           {/* Effects Cards */}
           <div className="space-y-6">
             <EffectsCard
               imgUrl="/trusted img.png"
-              title="TRUSTED PARTNERS"
+              title="HEALTHY DIGESTION"
               titleColor="font-Arial text-textColorgreen"
-              description="All our ingredients come farms who are certified organic. We can track and trace each ingredient back to its roots."
+              description="We use only the finest, easily digestible ingredients to ensure that your baby's delicate digestive system is well cared for."
               descriptionWidth="max-w-xl"
             />
             <EffectsCard
               imgUrl="/water drops.png"
-              title="TASTE, COLOUR & TEXTURE"
+              title="GIVING YOUR BABY THE BEST START"
               titleColor="font-Arial text-textColorgreen"
-              description="We use cold-pressure, not heat, to lock in the nutrients, vitamins, colour and natural flavour."
+              description="Our UGGU is carefully crafted to support your baby's development, every step of the way."
               descriptionWidth="max-w-xl"
             />
           </div>
@@ -51,9 +51,10 @@ export function Farm() {
         </div>
 
         {/* Right Section */}
-        <div className="w-full lg:w-1/2 mt-10 lg:mt-0">
+        <div className="w-full lg:w-1/2 mt-10 lg:mt-40">
           <img
-            src="https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/07/image_03_home_04.png"
+            // src="https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/07/image_03_home_04.png"
+            src="/public/child playing.png"
             alt="Farm Image"
             className="w-full h-auto"
           />

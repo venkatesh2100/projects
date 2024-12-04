@@ -21,7 +21,7 @@ export default {
       },
       animation: {
         fadeIn: 'fadeIn 1s ease-in-out',
-        morph: 'morph 1.5s ease-in-out',
+        morph: 'morph 1.5s ease-in-out forwards',
       },
       keyframes: {
         fadeIn: {
@@ -38,8 +38,8 @@ export default {
             transform: 'scale(1.05)',
           },
           '100%': {
-            borderRadius: '50%',
-            transform: 'scale(1.1)',
+            borderRadius: '100%',
+            transform: 'scale(1.7)',
           },
         },
       },
@@ -47,3 +47,9 @@ export default {
   },
   plugins: [],
 };
+// .cool-animation {
+//   width: 100px;
+//   height: 100px;
+//   background-color: #3498db;
+//   animation: morph 3s ease-in-out forwards;
+// }
