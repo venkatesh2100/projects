@@ -11,7 +11,7 @@ export function SectionHero() {
             <img
               src="/green_leaf.png"
               alt="Green Leaf"
-              className="mx-6 animate-bounce"
+              className="mx-6  mt-6 sm:animate-bounce"
               width={80}
             />
           </div>
@@ -28,16 +28,16 @@ export function SectionHero() {
             />
           </div>
           <div className="ml-8 text-start">
-            <Button text="Learn more" />
+            <Button text="Order now" />
           </div>
         </div>
 
         {/* Right Section - Image (1/3) */}
-        <div className="lg:col-span-1 items-center mt-8 lg:mt-10 shadow-sm flex justify-center lg:justify-end">
+        <div className="lg:col-span-1  items-center mt-8 lg:mt-10 flex justify-center lg:justify-end">
           <img
             src="/homepage.png"
             alt="Hero Image"
-            className="w-full "
+            className="max-w-full  "
           />
         </div>
       </div>

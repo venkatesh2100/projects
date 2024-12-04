@@ -22,7 +22,7 @@ export function Footer() {
             {/* Logo and Social Links */}
             <div className="flex flex-col items-center lg:items-start lg:w-1/3">
               <div className="text-4xl mb-8">
-                <h1>Logo</h1>
+                <img src="/public/logo.png" width={200} className="mb-8"></img>
               </div>
               <div className="flex gap-4 pb-8">
                 <div className="h-10 w-10 rounded-full bg-footerSociallink flex items-center justify-center">
@@ -35,7 +35,7 @@ export function Footer() {
                   </a>
                 </div>
                 <div className="h-10 w-10 rounded-full bg-footerSociallink flex items-center justify-center">
-                  <a href="/about">
+                  <a href="https://www.instagram.com/littlediet.in">
                     <img
                       src="https://img.icons8.com/?size=100&id=32292&format=png&color=000000"
                       alt="instagram"
@@ -53,38 +53,39 @@ export function Footer() {
                   </a>
                 </div>
               </div>
-              <p className="w-full text-center lg:text-left text-sm lg:w-72">
+              {/* <p className="w-full text-center lg:text-left text-sm lg:w-72">
                 *Receive fresh tips and exclusive promotions. No spam – we
                 promise.
-              </p>
+              </p> */}
             </div>
 
             {/* Subscription Section */}
             <div className="flex flex-col items-center lg:items-start lg:w-1/3">
               <div className="flex w-full relative">
-                <input
+                {/* <input
                   className="outline-none rounded-full px-4 h-11 text-black w-full lg:w-auto"
                   placeholder="Your Email"
-                />
-                <button className="absolute right-0 bg-orange-500 text-white px-6 py-2 rounded-full h-11 hover:bg-orange-600">
+                /> */}
+                {/* <button className="absolute right-0 bg-orange-500 text-white px-6 py-2 rounded-full h-11 hover:bg-orange-600">
                   Subscribe
-                </button>
+                </button> */}
               </div>
             </div>
 
             {/* Quick Links and Contact */}
             <div className="flex flex-col lg:flex-row gap-8 lg:w-1/3">
-              <div>
+              {/* <div>
+              H no 2-4-438, Ramnagar, Hanamkonda, Telangana, 506001
                 <h1 className="font-bold mb-4">Quick Links</h1>
                 <p>Our Story</p>
                 <p>Meal Selection</p>
                 <p>Blog</p>
-              </div>
+              </div> */}
               <div>
                 <h1 className="font-bold mb-4">Contact Details</h1>
-                <p>1234 Main St, City Name</p>
-                <p>+91 3485345349</p>
-                <p>littlediet@gmail.com</p>
+                <p>H no 2-4-438, Ramnagar,Hanakonda </p>
+                <p>+91 9032221070</p>
+                <p>littlediet.in@gmail.com</p>
               </div>
             </div>
           </div>

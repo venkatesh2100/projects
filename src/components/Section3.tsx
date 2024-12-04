@@ -8,8 +8,10 @@ export function SectionProducts() {
         const message = encodeURIComponent(
           "Hello, I am interested in the product. Please provide more details."
         );
-        window.location.href = `https://wa.me/${phoneNumber}?text=${message}`;
-    };
+        const url = `https://wa.me/${phoneNumber}?text=${message}`;
+        window.open(url, "_blank");
+      };
+
 
     return (
         <div className="bg-backgroundColor pt-32">
@@ -17,7 +19,8 @@ export function SectionProducts() {
                 {/* Image Section */}
                 <div className="w-full lg:w-1/2">
                     <img
-                        src="https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/07/image_02_home_04.png"
+                        // src="https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/07/image_02_home_04.png"
+                        src="/products.png"
                         alt=""
                         className="w-full h-auto"
                     />
@@ -36,24 +39,22 @@ export function SectionProducts() {
 
                     {/* Heading */}
                     <div className="font-paytone text-start text-3xl lg:text-6xl max-w-4xl text-textColorblack my-8 lg:text-left">
-                        Making mealtimes easy since 2017
+                    Nourishing Your Baby's Future
                     </div>
 
                     {/* Subheading and Description */}
                     <div className="text-center lg:text-left">
-                        <h2 className="text-textColorgreen text-start font-medium mb-4 lg:mb-6">
-                            ORGANIC BABY FOOD
-                        </h2>
-                        <div className="max-w-xl text-start mb-4 lg:mb-6">
-                            We’ve researched hundreds of great-tasting ingredients to find the ones
-                            that really pack a nutritional punch – so you don’t have to. We only use
-                            organic ingredients – no nasties. It’s guilt-free goodness.
+                        {/* <h2 className="text-textColorgreen text-start font-medium mb-4 lg:mb-6">
+                        Nourishing Your Baby's Future
+                        </h2> */}
+                        <div className="max-w-xl  text-2xl text-start mb-4 lg:mb-6">
+                        At Littlediet, we understand that your baby's nutrition is of utmost importance. That's why we prepare UGGU that is not only delicious but also packed with nutrients.
                         </div>
                     </div>
 
                     {/* Button */}
                     <div className="items-start">
-                        <Button text="Our Products" onClick={handleClick} />
+                        <Button text="Order Now" onClick={handleClick} />
                     </div>
                 </div>
             </div>
