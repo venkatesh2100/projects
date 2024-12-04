@@ -25,7 +25,7 @@ const FAQSection = () => {
   return (
     <div className="flex items-center justify-center bg-backgroundColor">
       <div className="max-w-4xl w-full py-10 px-4 bg-backgroundColor rounded-md">
-        <div className='flex justify-center animate-bounce'>
+        <div className='flex justify-center'>
             <img src="/green_leaf.png" alt="" />
         </div>
         <h2 className="text-3xl font-bold text-center mb-8">Your Questions, Answered</h2>
@@ -33,13 +33,16 @@ const FAQSection = () => {
           {FAQData.map((faq, index) => (
             <div
               key={index}
-              className={`border rounded-md overflow-hidden ${activeIndex === index ? 'bg-backgroundColor' : 'bg-backgroundColor'}`}
+              className="border rounded-2xl overflow-hidden hover:bg-slate-100"
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full flex justify-between items-center p-4 text-left focus:outline-none"
+                className="w-full flex justify-between items-center p-6 text-left focus:outline-none"
               >
-                <span className="text-lg font-medium">{faq.question}</span>
+                <div className='flex'>
+                  <img src="/questionIcon.png" alt="" className='w-5 h-5 mt-1'/>
+                  <span className="text-lg font-medium pl-2">{faq.question}</span>
+                </div>
                 <span className="text-xl">
                   {activeIndex === index ? '−' : '+'}
                 </span>
