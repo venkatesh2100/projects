@@ -54,7 +54,7 @@ export function Farm() {
         <div className="w-full lg:w-1/2 mt-10 lg:mt-40">
           <img
             // src="https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/07/image_03_home_04.png"
-            src="/public/child playing.png"
+            src="/child playing.png"
             alt="Farm Image"
             className="w-full h-auto"
           />

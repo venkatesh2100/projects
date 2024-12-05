@@ -22,7 +22,7 @@ export function Footer() {
             {/* Logo and Social Links */}
             <div className="flex flex-col items-center lg:items-start lg:w-1/3">
               <div className="text-4xl mb-8">
-                <img src="/public/logo.png" width={200} className="mb-8"></img>
+                <img src="/logo.png" width={200} className="mb-8"></img>
               </div>
               <div className="flex gap-4 pb-8">
                 <div className="h-10 w-10 rounded-full bg-footerSociallink flex items-center justify-center">
