@@ -37,7 +37,7 @@ export function SectionProducts() {
                         {/* <h2 className="text-textColorgreen text-start font-medium mb-4 lg:mb-6">
                         Nourishing Your Baby's Future
                         </h2> */}
-                        <div className="max-w-xl  text-2xl text-start mb-4 lg:mb-6">
+                        <div className="max-w-xl text-2xl text-start mb-4 lg:mb-6">
                         At Littlediet, we understand that your baby's nutrition is of utmost importance. That's why we prepare UGGU that is not only delicious but also packed with nutrients.
                         </div>
                     </div>

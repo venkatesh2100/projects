@@ -18,7 +18,7 @@ export function Farm() {
           </div>
 
           {/* Heading */}
-          <div className="font-paytone items-start text-5xl lg:text-6xl text-textColorblack my-4 lg:text-left">
+          <div className="font-paytone items-start text-3xl lg:text-6xl text-textColorblack my-4 lg:text-left">
             Nurturing Your Baby's Growth and Development
           </div>
 
