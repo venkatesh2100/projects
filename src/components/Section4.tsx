@@ -1,10 +1,6 @@
 import { Button } from "./Button";
 import { EffectsCard } from "./EffectsCard";
-// const handleOrderClick = () => {
-//     const phoneNumber = "9032221070"; // Replace with your WhatsApp number
-//     const message = encodeURIComponent("Hello, I am interested in the product. Please provide more details.");
-//     window.location.href = `https://wa.me/${phoneNumber}?text=${message}`;
-// };
+import { handleOrderClick } from "../whatsapp/redirectWhatsapp";
 
 export function Farm() {
   return (
@@ -23,7 +19,7 @@ export function Farm() {
 
           {/* Heading */}
           <div className="font-paytone items-start text-5xl lg:text-6xl text-textColorblack my-4 lg:text-left">
-          Nurturing Your Baby's Growth and Development
+            Nurturing Your Baby's Growth and Development
           </div>
 
           {/* Effects Cards */}
@@ -46,7 +42,7 @@ export function Farm() {
 
           {/* Button */}
           <div className="mt-6 items-start">
-            <Button text="Order Now" />
+            <Button text="Order Now" onClick={handleOrderClick}/>
           </div>
         </div>
 

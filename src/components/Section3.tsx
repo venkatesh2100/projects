@@ -1,17 +1,7 @@
 import { Button } from "./Button";
+import { handleOrderClick } from "../whatsapp/redirectWhatsapp";
 
 export function SectionProducts() {
-
-
-    const handleClick = () => {
-        const phoneNumber = "9032221070";
-        const message = encodeURIComponent(
-          "Hello, I am interested in the product. Please provide more details."
-        );
-        const url = `https://wa.me/${phoneNumber}?text=${message}`;
-        window.open(url, "_blank");
-      };
-
 
     return (
         <div className="bg-backgroundColor pt-32">
@@ -39,7 +29,7 @@ export function SectionProducts() {
 
                     {/* Heading */}
                     <div className="font-paytone text-start text-3xl lg:text-6xl max-w-4xl text-textColorblack my-8 lg:text-left">
-                    Nourishing Your Baby's Future
+                        Nourishing Your Baby's Future
                     </div>
 
                     {/* Subheading and Description */}
@@ -54,7 +44,7 @@ export function SectionProducts() {
 
                     {/* Button */}
                     <div className="items-start">
-                        <Button text="Order Now" onClick={handleClick} />
+                        <Button text="Order Now" onClick={handleOrderClick} />
                     </div>
                 </div>
             </div>

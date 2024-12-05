@@ -7,9 +7,6 @@ export function Section5() {
                 backgroundImage: `url('https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/07/background_03_home_04.jpg')`
             }}
         >
-            {/* Image is now inside the div, ensuring it's properly structured */}
-            {/* <img src="/public/child playing.png" alt="Child Playing" className="w-full h-screen " /> */}
-
             <div
                 className="flex w-full h-screen bg-no-repeat"
                 style={{

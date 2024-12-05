@@ -1,25 +1,15 @@
 import { useState } from "react";
 // import { Button } from "./Button";
 import { Button } from "./Button1";
+import { handleOrderClick } from "../whatsapp/redirectWhatsapp";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // const handleOrderClick = () => {
-  //       const phoneNumber = "9032221070"; // Replace with your WhatsApp number
-  //       const message = encodeURIComponent("Hello, I am interested in the product. Please provide more details.");
-  //       window.location.href = `https://wa.me/${phoneNumber}?text=${message}`;
-  //   };
 
-  const handleOrderClick = () => {
-    const phoneNumber = "9032221070";
-    const message = encodeURIComponent(
-      "Hello, I am interested in the product. Please provide more details."
-    );
-    window.location.href = `https://wa.me/${phoneNumber}?text=${message}`;
-  };
+  
 
   return (
-    <div className="w-full realtive h-20 bg-gradient-to-r to-pink-500 bg-backgroundColor fixed shadow-md">
+    <div className="w-full realtive h-20 bg-gradient-to-r to-pink-500 fixed">
       {/* Background Image */}
       <div className="  flex justify-between items-center mx-auto p-5 max-w-6xl">
         {/* Logo */}
@@ -35,34 +25,34 @@ const Header = () => {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
-          <span className="block w-full h-1 bg-black rounded"></span>
-          <span className="block w-full h-1 bg-black rounded"></span>
-          <span className="block w-full h-1 bg-black rounded"></span>
+          <span className="block w-full h-1 bg-white rounded"></span>
+          <span className="block w-full h-1 bg-white rounded"></span>
+          <span className="block w-full h-1 bg-white rounded"></span>
         </button>
 
         {/* Menu */}
         <div
-          className={`lg:flex flex-col bg-backgroundColor text-xl lg:flex-row gap-6 lg:gap-16 absolute lg:static top-16 left-0 w-full lg:w-auto bg-gradient-to-r lg:bg-transparent p-5 lg:p-0 shadow-lg lg:shadow-none transition-all duration-300 bg-backgroundColorease-in-out ${
+          className={`lg:flex flex-col bg-backgroundColor text-sm lg:flex-row gap-6 lg:gap-16 absolute lg:static top-16 left-0 w-full lg:w-auto bg-gradient-to-r lg:bg-transparent p-5 lg:p-0 shadow-lg lg:shadow-none transition-all duration-300 bg-backgroundColorease-in-out ${
             isMenuOpen ? "block" : "hidden"
           }`}
         >
           <div>
-            <a href="/" className="block lg:inline hover:text-yellow-300">
+            <a href="/" className="block text-black font-bold lg:inline hover:text-green-500">
               Home
             </a>
           </div>
           <div>
-            <a href="/about" className="block lg:inline hover:text-yellow-300">
+            <a href="/about" className="block text-black font-bold lg:inline hover:text-green-500">
               About
             </a>
           </div>
           <div>
-            <a href="/contact" className="block lg:inline hover:text-yellow-300">
+            <a href="/contact" className="block text-black font-bold lg:inline hover:text-green-500">
               Contact
             </a>
           </div>
           <div>
-            <a href="/blog" className="block lg:inline  hover:text-yellow-300">
+            <a href="/blog" className="block text-black font-bold lg:inline hover:text-green-500">
               Blog
             </a>
           </div>
