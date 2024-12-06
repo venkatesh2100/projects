@@ -13,7 +13,7 @@ export function EffectsCard({imgUrl, title, titleColor, description, description
         <div className="mt-10 my-6">
             <div className="flex">
                 <div className="flex items-center justify-center p-2 lg:p-4 pb-16 lg:pb-0">
-                    <img src={imgUrl} alt="" className="w-36 lg:w-16"/>
+                    <img src={imgUrl} alt="" className="w-20"/>
                 </div>
                 <hr className="h-24 w-[1px] bg-slate-950" />
                 <div className="px-6 py-1">
