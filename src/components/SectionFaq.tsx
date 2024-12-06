@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 const FAQData = [
   {
-    question: 'How long do your meals last?',
+    question: 'Is littlediet’s UGGU free from preservatives, sugar and salt?',
     answer: 'Our meals are designed to stay fresh for up to 5 days when stored in the refrigerator.',
   },
   {

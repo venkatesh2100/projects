@@ -1,10 +1,6 @@
 import { Button } from "./Button";
 import { EffectsCard } from "./EffectsCard";
-// const handleOrderClick = () => {
-//     const phoneNumber = "9032221070"; // Replace with your WhatsApp number
-//     const message = encodeURIComponent("Hello, I am interested in the product. Please provide more details.");
-//     window.location.href = `https://wa.me/${phoneNumber}?text=${message}`;
-// };
+import { handleOrderClick } from "../whatsapp/redirectWhatsapp";
 
 export function Farm() {
   return (
@@ -22,8 +18,8 @@ export function Farm() {
           </div>
 
           {/* Heading */}
-          <div className="font-paytone items-start text-5xl lg:text-6xl text-textColorblack my-4 lg:text-left">
-          Nurturing Your Baby's Growth and Development
+          <div className="font-paytone items-start text-3xl lg:text-6xl text-textColorblack my-4 lg:text-left">
+            Nurturing Your Baby's Growth and Development
           </div>
 
           {/* Effects Cards */}
@@ -46,7 +42,7 @@ export function Farm() {
 
           {/* Button */}
           <div className="mt-6 items-start">
-            <Button text="Order Now" />
+            <Button text="Order Now" onClick={handleOrderClick}/>
           </div>
         </div>
 
@@ -54,7 +50,7 @@ export function Farm() {
         <div className="w-full lg:w-1/2 mt-10 lg:mt-40">
           <img
             // src="https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/07/image_03_home_04.png"
-            src="/child playing.png"
+            src="/child playing_resize.png"
             alt="Farm Image"
             className="w-full h-auto"
           />
