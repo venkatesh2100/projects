@@ -13,7 +13,7 @@ const FeatureCircle: React.FC = () => {
     {
       id: 2,
       icon: "🥗",
-      text: "Fresh in the fridge for 10 days",
+      text: "Fresh in the fridge for 60 days",
       image: "https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/07/organic_animation_hover_01_home_04.jpg",
       bgColor: "bg-[#FD7015] bg-opacity-70", // Adjusted color and opacity
       position: "lg:absolute lg:top-[10%] lg:right-[0%]",
