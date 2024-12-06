@@ -1,3 +1,4 @@
+import { handleOrderClick } from "../whatsapp/redirectWhatsapp";
 import { Button } from "./Button";
 import { EffectsCard } from "./EffectsCard";
 
@@ -22,15 +23,14 @@ export function SectionHero() {
             <EffectsCard
               imgUrl="/leafimg.png"
               title="Great ingredients"
-              titleColor="text-green-500"
+              titleColor="text-green-600"
               description="We only use organic ingredients – no nasties!"
               descriptionWidth="max-w-xs"
             />
           </div>
-
           {/* Button */}
           <div className="pl-6 pt-6">
-            <Button text="Order now" />
+            <Button text="Order now" onClick={handleOrderClick}/>
           </div>
         </div>
       </div>

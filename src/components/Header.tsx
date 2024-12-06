@@ -5,7 +5,12 @@ import { handleOrderClick } from "../whatsapp/redirectWhatsapp";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-
+  const scrollToFooter = () => {
+    const footerElement = document.getElementById('footer');
+    if (footerElement) {
+      footerElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className="w-full realtive h-20 bg-gradient-to-r to-pink-500 fixed">
@@ -45,10 +50,10 @@ const Header = () => {
               About
             </a>
           </div>
-          <div>
-            <a href="/contact" className="block text-black font-bold lg:inline hover:text-green-500">
+          <div className="text-black font-bold lg:inline hover:text-green-500">
+            <button onClick={scrollToFooter}>
               Contact
-            </a>
+            </button>
           </div>
         </div>
 

@@ -1,7 +1,8 @@
-export function Footer() {
 
+
+export function Footer() {
   return (
-    <div>
+    <div id="footer">
       <div
         className="bg-footerColor bg-cover bg-center"
         style={{
@@ -28,7 +29,7 @@ export function Footer() {
               </div>
               <div className="flex gap-4 pb-8">
                 <div className="h-10 w-10 rounded-full bg-footerSociallink flex items-center justify-center">
-                  <a href="/about" target="_blank">
+                  <a href="/about" target="_blank" rel="noopener noreferrer">
                     <img
                       src="https://img.icons8.com/?size=100&id=106163&format=png&color=000000"
                       alt="facebook"
@@ -40,6 +41,7 @@ export function Footer() {
                   <a
                     href="https://www.instagram.com/littlediet.in"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <img
                       src="https://img.icons8.com/?size=100&id=32292&format=png&color=000000"
@@ -49,7 +51,7 @@ export function Footer() {
                   </a>
                 </div>
                 <div className="h-10 w-10 rounded-full bg-footerSociallink flex items-center justify-center">
-                  <a href="/about" target="_blank">
+                  <a href="/about" target="_blank" rel="noopener noreferrer">
                     <img
                       src="https://img.icons8.com/?size=100&id=37325&format=png&color=000000"
                       alt="youtube"
@@ -60,7 +62,7 @@ export function Footer() {
               </div>
             </div>
 
-            {/* Contact Section Link */}
+            {/* Contact Section */}
             <div className="lg:w-1/2">
               <h1 className="font-bold mb-4 text-center lg:text-left">
                 Contact Details
@@ -74,4 +76,4 @@ export function Footer() {
       </div>
     </div>
   );
-}
+};
