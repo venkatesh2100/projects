@@ -4,7 +4,7 @@ import { EffectsCard } from "./EffectsCard";
 export function SectionHero() {
   return (
     <div
-      className="h-screen bg-backgroundColor bg-no-repeat"
+      className="h-screen bg-backgroundColor bg-center bg-no-repeat"
       style={{
         backgroundImage:
           "url(/littlediet_baby_homepage_resize.jpg)",
@@ -33,15 +33,6 @@ export function SectionHero() {
             <Button text="Order now" />
           </div>
         </div>
-      </div>
-
-      {/* Bottom Image */}
-      <div>
-        <img
-          src="/bottom_grey_wave_home_04.png"
-          alt="Bottom Grey Wave"
-          className="bg-no-repeat absolute bottom-0 left-0 h-16 w-full"
-        />
       </div>
     </div>
   );
