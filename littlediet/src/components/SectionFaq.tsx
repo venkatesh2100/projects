@@ -2,16 +2,16 @@ import { useState } from 'react';
 
 const FAQData = [
   {
-    question: 'Is littlediet’s UGGU free from preservatives, sugar and salt?',
-    answer: 'Our meals are designed to stay fresh for up to 5 days when stored in the refrigerator.',
+    question: 'Is littlediet’s UGGU free from preservatives, sugar and salt? ',
+    answer: 'Yes completely. We do not add any preservatives, artificial flavors, artificial colors, refined sugar or salt. So you can safely give our food products to your child without a worry.'
+},
+  {
+    question: 'Is there any allergy risk I should be aware of?',
+    answer: 'Please check the list of ingredients on the pack or website before you feed your child. UGGU will contain nuts, since they are highly nutritious. If you are not aware of any such allergy and your child has never had nuts before – it is advisable to let your child have a taste and wait for 3 days to see if there is any allergic reaction.',
   },
   {
-    question: 'Can I heat your baby meals?',
-    answer: 'Yes, you can heat the baby meals in a microwave or stovetop as per the instructions provided.',
-  },
-  {
-    question: 'How do I know your food is safe and top quality?',
-    answer: 'We source ingredients from trusted suppliers and adhere to strict quality and safety standards.',
+    question: 'What is the expiry date of the UGGU?',
+    answer: 'The expiry date is 3 months from the date of manufacture if stored in an airtight container and kept inside the refrigerator.',
   },
 ];
 

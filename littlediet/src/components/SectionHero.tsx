@@ -7,7 +7,7 @@ export function SectionHero() {
       className="h-screen bg-backgroundColor bg-center bg-no-repeat"
       style={{
         backgroundImage:
-          "url(/public/littlediet_baby_homepage_resize.jpg)",
+          "url(/littlediet_baby_homepage_resize.jpg)",
       }}
     >
       {/* Main Content */}
