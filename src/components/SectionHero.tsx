@@ -4,7 +4,7 @@ import { EffectsCard } from "./EffectsCard";
 export function SectionHero() {
   return (
     <div
-      className="h-screen bg-backgroundColor bg-center bg-no-repeat"
+      className="h-screen bg-backgroundColor bg-no-repeat"
       style={{
         backgroundImage:
           "url(/littlediet_baby_homepage_resize.jpg)",
@@ -12,18 +12,7 @@ export function SectionHero() {
     >
       {/* Main Content */}
       <div className="flex h-screen mt-200 w-full items-center justify-start">
-        <div className="text-center text-white   pt-200  lg:text-left lg:col-span-2">
-          {/* Image Section */}
-          {/* <div className="pl-39 pb-32 lg:pl-8 lg:pb-10 lg:ml-80">
-            <img
-              src="/superMonImage.png"
-              alt="Green Leaf"
-              className="mx-5 mt-6 sm:animate-bounce"
-              width={81}
-            />
-          </div> */}
-
-          {/* Title Section */}
+        <div className="text-center text-white lg:pl-16  pt-200  lg:text-left lg:col-span-2">
           <div className="text-start ml-6 mt-6 text-4xl font-paytone sm:text-5xl lg:text-7xl max-w-2xl">
             Freshly prepared UGGU for Little Ones
           </div>
@@ -40,7 +29,7 @@ export function SectionHero() {
           </div>
 
           {/* Button */}
-          <div className="ml-8 p-6 text-3xl">
+          <div className="pl-6 pt-6">
             <Button text="Order now" />
           </div>
         </div>
@@ -54,17 +43,6 @@ export function SectionHero() {
           className="bg-no-repeat absolute bottom-0 left-0 h-16 w-full"
         />
       </div>
-
-      {/* Optional Right Section */}
-      {/*
-      <div className="lg:col-span-1 flex items-center justify-center lg:justify-end mt-8 lg:mt-10">
-        <img
-          src="/homepage.png"
-          alt="Hero Image"
-          className="max-w-full"
-        />
-      </div>
-      */}
     </div>
   );
 }

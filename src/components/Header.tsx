@@ -50,11 +50,6 @@ const Header = () => {
               Contact
             </a>
           </div>
-          <div>
-            <a href="/blog" className="block text-black font-bold lg:inline hover:text-green-500">
-              Blog
-            </a>
-          </div>
         </div>
 
         {/* Order Button */}
