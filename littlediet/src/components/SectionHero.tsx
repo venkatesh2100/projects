@@ -1,5 +1,5 @@
 import { handleOrderClick } from "../whatsapp/redirectWhatsapp";
-import { Button } from "./Button";
+// import { Button } from "./Button";
 import { EffectsCard } from "./EffectsCard";
 
 export function SectionHero() {
@@ -29,7 +29,7 @@ export function SectionHero() {
           </div>
 
           {/* Button */}
-          <div className="lg:pl-6 lg:pt-6 pr-64">
+          <div className="lg:pl-6 lg:pt-6 pl-2  pr-64">
             <Button text="Order now" onClick={handleOrderClick} />
           </div>
         </div>
@@ -40,9 +40,26 @@ export function SectionHero() {
         <img
           src="/bottom_grey_wave_home_04.png"
           alt="Bottom Grey Wave"
-          className="w-full h-5"
+          className="w-full h-1 sm:h-5"
         />
       </div>
+    </div>
+  );
+}
+interface ButtonProps {
+  text: string;
+  onClick?: () => void;
+}
+
+export function Button({ text, onClick }: ButtonProps) {
+  return (
+    <div className="mt-10">
+      <button
+        className="bg-[#FF7119] text-white font-medium px-12 py-1 sm:px-10 sm:py-4 rounded-tr-full rounded-tl-none rounded-bl-full rounded-br-full hover:shadow-lg"
+        onClick={onClick}
+      >
+        {text}
+      </button>
     </div>
   );
 }

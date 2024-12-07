@@ -34,7 +34,7 @@ const Header = () => {
   return (
     <div
       className={`w-full fixed top-0 z-50 h-20 transition-all duration-300 ${
-        isScrolled ? "bg-black shadow-md" : "bg-gradient-to-r"
+        isScrolled ? "bg-backgroundColor shadow-md" : "bg-gradient-to-r"
       }`}
     >
       <div className="flex justify-between items-center mx-auto p-5 max-w-6xl">
@@ -64,7 +64,7 @@ const Header = () => {
             } ${
               isScrolled ? "bg-backgroundColor shadow-md" : "bg-gradient-to-r"
               }`}
-              style={{ backgroundColor: "#D5C2B1" }}
+              // style={{ backgroundColor: "#D5C2B1" }}
         >
           <div>
             <a href="/" className="block text-black font-bold lg:inline hover:text-green-500">
