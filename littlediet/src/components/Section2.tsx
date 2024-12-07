@@ -37,7 +37,7 @@ const FeatureCircle: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center bg-backgroundColor pt-60 p-24">
+    <div className="flex flex-col items-center bg-backgroundColor pt-60 pl-10 sm:pl-24">
       {/* Header */}
       <div>
         <img
@@ -47,7 +47,7 @@ const FeatureCircle: React.FC = () => {
           width={80}
         />
       </div>
-      <div className="text-7xl font-paytone">As Fresh As It Gets</div>
+      <div className="text-4xl sm:text-7xl font-paytone">As Fresh As It Gets</div>
 
       {/* Center Image */}
       <div className="absolute flex justify-center items-center w-full h-auto mt-96 pr-28">

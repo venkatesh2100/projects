@@ -58,12 +58,13 @@ const Header = () => {
 
         {/* Menu */}
         <div
-          className={`lg:flex flex-col bg-backgroundColor text-md lg:flex-row gap-6 lg:gap-16 absolute lg:static top-16 left-0 w-full lg:w-auto bg-gradient-to-r lg:bg-transparent p-5 lg:p-0 shadow-lg lg:shadow-none transition-all duration-300 ease-in-out ${
+            style={{ backgroundColor: "#D5C2B1" }}
+          className={`lg:flex flex-col bg-transparent  text-md lg:flex-row gap-6 lg:gap-16 absolute lg:static top-16 left-0 w-full lg:w-auto bg-gradient-to-r lg:bg-transparent p-5 lg:p-0 shadow-lg lg:shadow-none transition-all duration-300 ease-in-out ${
             isMenuOpen ? "block" : "hidden"
 
-          } ${
-            isScrolled ? "bg-backgroundColor shadow-md" : "bg-gradient-to-r"
-          }`}
+            } ${
+              isScrolled ? "bg-backgroundColor shadow-md" : "bg-gradient-to-r"
+              }`}
         >
           <div>
             <a href="/" className="block text-black font-bold lg:inline hover:text-green-500">
