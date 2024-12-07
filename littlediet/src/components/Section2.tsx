@@ -79,7 +79,7 @@ const FeatureCircle: React.FC = () => {
             {/* Hover Image */}
             <div
               className="absolute w-full h-full bg-cover bg-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
-              style={{ backgroundImage: `url(${feature.image})` }}
+              // style={{ backgroundImage: `url(${feature.image})` }}
             />
           </div>
         ))}
