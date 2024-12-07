@@ -28,6 +28,7 @@ export function SectionHero() {
             />
           </div>
 
+
           {/* Button */}
           <div className="lg:pl-6 lg:pt-6 pl-2  pr-64">
             <Button text="Order now" onClick={handleOrderClick} />
