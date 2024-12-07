@@ -9,6 +9,7 @@ const FeatureCircle: React.FC = () => {
       image: "https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/07/organic_animation_hover_01_home_04.jpg",
       bgColor: "bg-[#82A000] bg-opacity-70",
       position: "lg:absolute lg:top-[10%] lg:left-[5%]",
+      border: "43% 57% 18% 82% / 60% 77% 23% 40%",
     },
     {
       id: 2,
@@ -17,6 +18,7 @@ const FeatureCircle: React.FC = () => {
       image: "https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/07/organic_animation_hover_01_home_04.jpg",
       bgColor: "bg-[#FD7015] bg-opacity-70",
       position: "lg:absolute lg:top-[10%] lg:right-[0%]",
+      border: "45% 55% 76% 24% / 79% 52% 48% 21%",
     },
     {
       id: 3,
@@ -25,6 +27,7 @@ const FeatureCircle: React.FC = () => {
       image: "https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/07/organic_animation_hover_01_home_04.jpg",
       bgColor: "bg-[#EA4006] bg-opacity-70",
       position: "lg:absolute lg:bottom-[10%] lg:right-[0%]",
+      border: "27% 73% 46% 54% / 26% 42% 58% 74%",
     },
     {
       id: 4,
@@ -32,6 +35,7 @@ const FeatureCircle: React.FC = () => {
       text: "No sugar, artificial preservatives added",
       image: "https://bambino.bold-themes.com/demo-01/wp-content/uploads/sites/2/2022/07/organic_animation_hover_01_home_04.jpg",
       bgColor: "bg-[#F8B413] bg-opacity-70",
+      border: "76% 24% 51% 49% / 34% 19% 81% 66%",
       position: "lg:absolute lg:bottom-[10%] lg:left-[5%]",
     },
   ];
@@ -63,7 +67,8 @@ const FeatureCircle: React.FC = () => {
         {features.map((feature) => (
           <div
             key={feature.id}
-            className={`group m-6 relative flex items-center rounded-full justify-center w-64 h-64 ${feature.bgColor} text-white text-center shadow-lg ${feature.position} transition-all duration-500 ease-in-out overflow-hidden hover:animate-morph hover:scale-110`}
+            className={`group m-6 relative flex items-center justify-center w-64 h-64 ${feature.bgColor} text-white text-center shadow-lg ${feature.position} transition-all duration-500 ease-in-out overflow-hidden hover:animate-morph hover:scale-110`}
+            style={{ borderRadius: feature.border }}  // Apply the border radius from the 'border' field
           >
             {/* Default Content */}
             <div className="absolute flex flex-col items-center justify-center w-full h-full z-10 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
@@ -74,7 +79,7 @@ const FeatureCircle: React.FC = () => {
             {/* Hover Image */}
             <div
               className="absolute w-full h-full bg-cover bg-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
-              // style={{ backgroundImage: `url(${feature.image})` }}
+              style={{ backgroundImage: `url(${feature.image})` }}
             />
           </div>
         ))}
