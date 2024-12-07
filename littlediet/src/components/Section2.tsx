@@ -37,7 +37,7 @@ const FeatureCircle: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center bg-backgroundColor pt-60 pl-10 sm:pl-24">
+    <div className="flex flex-col items-center bg-backgroundColor pt-20 pl-10 sm:pl-24">
       {/* Header */}
       <div>
         <img
@@ -74,7 +74,7 @@ const FeatureCircle: React.FC = () => {
             {/* Hover Image */}
             <div
               className="absolute w-full h-full bg-cover bg-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out"
-              style={{ backgroundImage: `url(${feature.image})` }}
+              // style={{ backgroundImage: `url(${feature.image})` }}
             />
           </div>
         ))}
