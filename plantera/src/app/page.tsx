@@ -5,7 +5,6 @@ import { NavBar } from "../components/navbar";
 import Image from "next/image";
 import Footer from "@/components/footer";
 
-
 interface ImageProps {
   image: string;
   alt: string;
@@ -40,7 +39,7 @@ export default function Home() {
       <div className="relative text-center bg-[#F9EDE2] h-[100vh]">
         {/* Background Image */}
         <Image
-          src="https://s3-alpha-sig.figma.com/img/d053/7814/4e5e8a88e68f247771e365a7e5dc1cef?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KW0EcTR497lw~tI96aGgZgqURFZGR4xtSJ94~oOM759FsxPHC9sK1aa86oBpIXHuclGYEA3jXXalXRKrUt6xwFworikuwoatR2Y2tsogF6nH3WHpscJe3LjZgpMI5qL91seymcVurcjOOVJ4onldiZtYuV6UTFnzheCHldrmycjVJJJRdkP~dl0zsQrZKEumcfyz7X4ChP-edfV7zMZvZf47cnVDYSzpCmR4fpC3hUq~2LHItZtfV7gcOqPAzdN0oS8NewIdcDW-yWynylJ-SqFVsAHvWzx2-PayKVNKpqbDqPpOoCWDjM7BDnl2S4f71~7-Z9iulxu1RVGrrnneeA__"
+          src="/public/Section 1_cleanup.png"
           alt="Hero Background"
           fill
           style={{ objectFit: "cover" }}
@@ -133,7 +132,7 @@ export default function Home() {
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
           <Image
-            src="/path/to/plant3.png"
+            src="/Plant images/Image 3.png"
             alt="Plant Care 1"
             width={192}
             height={192}
@@ -147,6 +146,50 @@ export default function Home() {
           {/* Add more care guide images as necessary */}
         </div>
       </div>
+      {/** New Leater Section*/}
+      <div className="p-40 pl-60">
+        <div className="items-center">
+          <h3 className="text-3xl font-bold mb-5">Explore Our Collection</h3>
+          <p>
+            iscover a world of lush, vibrant plants at Plantera. Our carefully
+            curated collection features a diverse range of species, from
+            low-maintenance succulents to towering floor plants, all chosen to
+            bring natural beauty and air-purifying benefits to your living space
+          </p>
+        </div>
+        <div>
+          <button className="border-black rounded-xl border  px-10 mt-5">
+            Sign Up for Our Newsletter
+          </button>
+        </div>
+      </div>
+
+      <div className="flex ">
+        <div className="w-full items-center">Image</div>
+        <div>
+          <div className=" items-center">
+            <h1 className="text-3xl font-bold mb-5 Text" >Elevate Your Outdoor Oasis</h1>
+            <p>
+              Transform your patio, balcony, or garden into a lush, inviting
+              retreat with Plantera's selection of outdoor plants. From blooming
+              flowers to hardy, drought-resistant shrubs, our plants are
+              designed to thrive in various climates and conditions
+            </p>
+            <div className="">
+              <div className="flex">
+                <button className="border border-black px-5 mr-20 rounded-md">Shop out</button>
+                <button className="border border-black px-5 rounded-md">Care Tips</button>
+              </div>
+              <div className="flex mt-10 mb-20">
+                <button className="border border-black px-2 mr-10 rounded-md">Explore Accounts</button>
+                <button className="border border-black px-5 rounded-md">Plant Subcriptions</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
       <Footer />
     </div>
   );
