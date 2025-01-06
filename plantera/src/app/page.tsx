@@ -1,6 +1,5 @@
 "use client";
 
-import { useSession } from "next-auth/react";
 import { NavBar } from "../components/navbar";
 import Image from "next/image";
 import Footer from "@/components/footer";
@@ -20,15 +19,6 @@ const ProductCard = ({ image, alt, name }: ImageProps) => (
 );
 
 export default function Home() {
-  // const { data: session, status } = useSession();
-
-  // Handle loading and unauthenticated states
-  // if (status === "loading") {
-  //   return <div>Loading...</div>;
-  // }
-  // if (!session) {
-  //   return <div>You need to sign in</div>;
-  // }
 
   return (
     <div>
@@ -171,7 +161,7 @@ export default function Home() {
             <h1 className="text-3xl font-bold mb-5 Text" >Elevate Your Outdoor Oasis</h1>
             <p>
               Transform your patio, balcony, or garden into a lush, inviting
-              retreat with Plantera's selection of outdoor plants. From blooming
+              retreat with Planter's selection of outdoor plants. From blooming
               flowers to hardy, drought-resistant shrubs, our plants are
               designed to thrive in various climates and conditions
             </p>
