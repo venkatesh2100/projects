@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "@ajeetkumarnpm/medium-common-final": "^1.0.0",
-    "@prisma/client": "^5.19.0",
+    "@prisma/client": "^6.0.1",
     "@prisma/extension-accelerate": "^1.1.0",
     "@venkatesh2100/medium-common": "^1.0.0",
     "bcryptjs": "^2.4.3",
@@ -18,6 +18,6 @@
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240529.0",
     "prisma": "^5.19.0",
-    "wrangler": "^3.57.2"
+    "wrangler": "^3.95.0"
   }
 }

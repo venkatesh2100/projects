@@ -39,7 +39,7 @@ export default function Home() {
       <div className="relative text-center bg-[#F9EDE2] h-[100vh]">
         {/* Background Image */}
         <Image
-          src="/public/Section 1_cleanup.png"
+          src="/Section 1_cleanup.png"
           alt="Hero Background"
           fill
           style={{ objectFit: "cover" }}
