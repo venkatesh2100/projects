@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-plant-footer-bg text-white py-12">
+    <footer className=" text-[#5d8169] py-12">
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between mb-8">
           <div>
@@ -34,10 +34,10 @@ const Footer = () => {
                 <Link href="https://facebook.com" className="hover:underline">Facebook</Link>
               </li>
               <li>
-                <Link href="https://instagram.com" className="hover:underline">Instagram</Link>
+                <Link href="https://instagram.com/venky_ins" className="hover:underline">Instagram</Link>
               </li>
               <li>
-                <Link href="https://twitter.com" className="hover:underline">Twitter</Link>
+                <Link href="https://twitter.com/venky_officials" className="hover:underline">Twitter</Link>
               </li>
             </ul>
           </div>
