@@ -18,7 +18,8 @@ const Footer = () => {
               <li>
                 <Link href="/our-story" className="hover:underline">Our Story</Link>
               </li>
-              
+              rm -rf .git/subtree-cache
+
               <li>
                 <Link href="/sustainability" className="hover:underline">Sustainability</Link>
               </li>
