@@ -53,7 +53,7 @@ export const Main_pageNewsletter: React.FC = () => {
             alt="Outdoor Plants"
             width={736}
             height={800}
-            className=""
+            className=" "
           />
         </div>
         {/* Right Content */}
