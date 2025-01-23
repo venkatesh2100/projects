@@ -35,7 +35,11 @@ export default function Login() {
         />
         <button
           onClick={async () => {
-            await signIn("credentials", { username, password, redirect: false });
+            await signIn("credentials", {
+              username,
+              password,
+              redirect: false,
+            });
             router.push("/");
           }}
           className="w-full p-3 mb-4 bg-green-700 text-white font-semibold rounded-md hover:bg-green-600 transition"

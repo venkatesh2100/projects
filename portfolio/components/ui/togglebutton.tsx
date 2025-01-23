@@ -9,7 +9,7 @@ const ToggleButton: React.FC = () => {
     const theme = localStorage.getItem('theme');
     if (theme) {
       setIsDarkMode(theme === 'dark');
-      document.documentElement.classList.toggle('dark', theme === 'dark');
+      document.documentElement.classNameList.toggle('dark', theme === 'dark');
     }
   }, []);
 
@@ -17,7 +17,7 @@ const ToggleButton: React.FC = () => {
   const toggleTheme = () => {
     const newTheme = isDarkMode ? 'light' : 'dark';
     setIsDarkMode(!isDarkMode);
-    document.documentElement.classList.toggle('dark', !isDarkMode);
+    document.documentElement.classNameList.toggle('dark', !isDarkMode);
     localStorage.setItem('theme', newTheme);
 
     // Show the full-screen content (image, video, or emoji)

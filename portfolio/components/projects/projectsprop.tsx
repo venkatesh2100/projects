@@ -40,7 +40,7 @@ const Projects = () => {
     {
       name: "Tic-Tac-Toe",
       link: "",
-      description: "It is a full-stack application that allows users to play the classic Tic Tac Toe game in both single-player and multiplayer modes.",
+      description: "It is a full-stack application that allows users to play the classNameic Tic Tac Toe game in both single-player and multiplayer modes.",
       stack: ["React", "Python", "Flask"],
       image: "/AI.png", // Path should be relative to 'public' for Next.js
       icon: "/tic.svg",
