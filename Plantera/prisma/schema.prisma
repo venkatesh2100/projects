@@ -1,0 +1,113 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int       @id @default(autoincrement())
+  username  String    @unique
+  email     String    @unique
+  password  String
+  role      Role
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  products  Product[]
+  orders    Order[]
+  reviews   Review[]
+  wishlist  Wishlist[]
+}
+
+enum Role {
+  buyer
+  seller
+}
+
+model Product {
+  id          Int          @id @default(autoincrement())
+  name        String
+  description String?
+  price       Float
+  stock       Int
+  seller      User         @relation(fields: [sellerId], references: [id])
+  sellerId    Int
+  categories  ProductCategory[]
+  reviews     Review[]
+  wishlist    Wishlist[]
+  orderItems  OrderItem[]  // Add this field for the relation
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+}
+
+model Order {
+  id         Int          @id @default(autoincrement())
+  buyer      User         @relation(fields: [buyerId], references: [id])
+  buyerId    Int
+  totalPrice Float
+  status     OrderStatus  @default(pending)
+  items      OrderItem[]
+  createdAt  DateTime     @default(now())
+  updatedAt  DateTime     @updatedAt
+}
+
+enum OrderStatus {
+  pending
+  completed
+  cancelled
+}
+
+model OrderItem {
+  id        Int      @id @default(autoincrement())
+  order     Order    @relation(fields: [orderId], references: [id])
+  orderId   Int
+  product   Product  @relation(fields: [productId], references: [id])
+  productId Int
+  quantity  Int
+  price     Float
+}
+
+model Review {
+  id        Int      @id @default(autoincrement())
+  product   Product  @relation(fields: [productId], references: [id])
+  productId Int
+  user      User     @relation(fields: [userId], references: [id])
+  userId    Int
+  rating    Int
+  comment   String?
+  createdAt DateTime @default(now())
+}
+
+model Wishlist {
+  id        Int      @id @default(autoincrement())
+  user      User     @relation(fields: [userId], references: [id])
+  userId    Int
+  product   Product  @relation(fields: [productId], references: [id])
+  productId Int
+  createdAt DateTime @default(now())
+}
+
+model Category {
+  id        Int                @id @default(autoincrement())
+  name      String             @unique
+  products  ProductCategory[]
+  createdAt DateTime           @default(now())
+}
+
+model ProductCategory {
+  product   Product  @relation(fields: [productId], references: [id])
+  productId Int
+  category  Category @relation(fields: [categoryId], references: [id])
+  categoryId Int
+
+  @@id([productId, categoryId])
+}
