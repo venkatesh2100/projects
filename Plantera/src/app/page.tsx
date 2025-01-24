@@ -3,7 +3,7 @@
 import { NavBar } from "../components/navbar";
 import Image from "next/image";
 import Footer from "@/components/footer";
-import {Mainpage_Hero} from "@/components/home/hero";
+import { Mainpage_Hero } from "@/components/home/hero";
 import { Main_ProductSection } from "@/components/home/product";
 import { Mainpage_Finalsection } from "@/components/home/finalsection";
 import { Main_pageNewsletter } from "@/components/home/newletter";
@@ -14,20 +14,16 @@ interface ImageProps {
   name: string;
 }
 
-// Reusable ProductCard Component
-
-
 export default function Home() {
-
   return (
     <div>
       {/* Navbar */}
       <NavBar />
 
       {/* Main Hero Section */}
-      <Mainpage_Hero/>
+      <Mainpage_Hero />
       {/* Product Section */}
-     <Main_ProductSection/>
+      <Main_ProductSection />
 
       {/* Mid-section */}
       <div className="relative flex items-center h-[80vh] bg-[#E9F6E2] py-16">
@@ -62,9 +58,9 @@ export default function Home() {
       </div>
 
       {/* Final Section */}
-      <Mainpage_Finalsection/>
+      <Mainpage_Finalsection />
       {/** New Leater Section*/}
-     <Main_pageNewsletter/>
+      <Main_pageNewsletter />
 
       <Footer />
     </div>
