@@ -3,7 +3,7 @@ import GoogleProvider from "next-auth/providers/google";
 import GitHubProvider from "next-auth/providers/github";
 
 import bcrypt from "bcrypt";
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient, Role } from "@prisma/client";  // Import the Role enum
 
 const prisma = new PrismaClient();
 
@@ -27,25 +27,25 @@ export const NEXT_AUTH_CONFIG = {
               user.password
             );
             if (isPasswordValid) {
-              console.log(user);
-              return user;
+              return { ...user, id: user.id.toString() }; // Ensuring id is a string
             }
           }
         } catch (error) {
-          message: `password is incorrect ${error}`;
+          console.error("Error:", error);
         }
 
         if (!user && credentials?.password) {
           const hashedPass = await bcrypt.hash(credentials.password, 10);
-          const user = await prisma.user.create({
+          const newUser = await prisma.user.create({
             data: {
               email: credentials.username,
               password: hashedPass,
+              username: credentials.username, // Add the username here
+              role: Role.buyer, // Use Role.buyer or Role.seller here
             },
           });
-          if (user) {
-            console.log(user);
-            return user;
+          if (newUser) {
+            return { ...newUser, id: newUser.id.toString() }; // Ensuring id is a string
           }
         }
 
@@ -57,9 +57,9 @@ export const NEXT_AUTH_CONFIG = {
       clientSecret: process.env.GOOGLE_CLIENT_SECRET || "",
     }),
     GitHubProvider({
-        clientId: process.env.GITHUB_ID ||"",
-        clientSecret: process.env.GITHUB_SECRET || ""
-    })
+      clientId: process.env.GITHUB_ID || "",
+      clientSecret: process.env.GITHUB_SECRET || "",
+    }),
   ],
   secret: process.env.NEXTAUTH_SECRET,
   callbacks: {
@@ -69,7 +69,7 @@ export const NEXT_AUTH_CONFIG = {
       }
       return token;
     },
-    session: ({ session, token, user }: any) => {
+    session: ({ session, token }: any) => {
       if (session.user) {
         session.user.id = token.uid;
       }

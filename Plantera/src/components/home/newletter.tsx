@@ -63,7 +63,7 @@ export const Main_pageNewsletter: React.FC = () => {
           </h1>
           <p className="text-[#A2A3A1] mb-8">
             Transform your patio, balcony, or garden into a lush, inviting retreat
-            with Plantera's selection of outdoor plants. From blooming flowers to
+            with Plantera&apos; selection of outdoor plants. From blooming flowers to
             hardy, drought-resistant shrubs, our plants are designed to thrive in
             various climates and conditions.
           </p>
