@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Mainpage_Hero: React.FC = () => {
   return (
-    <div className="relative h-[100vh] mt-10  bg-[#F9EDE2]">
+    <div className="relative h-[100vh] mt-10 bg-[#F9EDE2]">
       {/* Background Image */}
       <Image
         src="/plantera Home ui Images/Section 2.jpg"
@@ -18,12 +18,12 @@ export const Mainpage_Hero: React.FC = () => {
           Discover the Beauty of Plantera
         </h1>
         <p className="text-lg text-[#5B4423] mb-6">
-          Elevate your living space with Plantera's vibrant collection of lush,
-          healthy plants. Explore our top-sellers, learn expert care tips, and
-          sign up for our newsletter to stay in the loop on all things
+          Elevate your living space with Plantera&apos;s vibrant collection of
+          lush, healthy plants. Explore our top-sellers, learn expert care tips,
+          and sign up for our newsletter to stay in the loop on all things
           plant-related.
         </p>
-        <button className=" py-3 bg-[#FEFEFE] text-[#7B8980] font-medium rounded-full shadow-md hover:bg-green-800 transition duration-300">
+        <button className="py-3 bg-[#FEFEFE] text-[#7B8980] font-medium rounded-full shadow-md hover:bg-green-800 transition duration-300">
           Shop Now
         </button>
       </div>
