@@ -4,7 +4,7 @@ export const projects = [
     title: "Blog - Social Blog App",
     des: "A clean web application using TypeScript for creating and managing a blog..",
     img: "/blog.jpeg",
-    iconLists: ["/re.svg", "/tail. svg", "/ts.svg", "/mdb.svg", "/recoiljs.svg"],
+    iconLists: ["/re.svg", "/ts.svg", "/mdb.svg", "/recoiljs.svg"],
     link: "https://github.com/venkatesh2100/Blog-site",
   },
   {
