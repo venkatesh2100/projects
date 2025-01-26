@@ -38,7 +38,7 @@ export default function RootLayout({
         <link rel="icon" href="/samuri.png" type="image" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} w-80vh antialiased dark:bg-grid-small-white/[0.3] sm:dark:bg-grid-white/[0.1] overflow-x-hidden sm:overflow-y-auto`}
+        className={`${geistSans.variable} ${geistMono.variable} w-80vh antialiased dark:bg-grid-small-white/[0.1] sm:dark:bg-grid-white/[0] overflow-x-hidden sm:overflow-y-auto`}
       >
         <Toaster richColors />
 

@@ -11,7 +11,7 @@ const ResumeComponent: React.FC = () => {
             <a href="mailto:thisisvenky.ynm@gmail.com" className="underline">
               thisisvenky.ynm@gmail.com
             </a>{' '}
-            | +91 9346395054
+            | +91 934xmailmexx59
           </p>
           <div className="flex justify-center mt-4 gap-4">
             <a href="https://github.com/venkatesh2100" className="underline hover:text-blue-200">
