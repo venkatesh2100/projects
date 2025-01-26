@@ -29,7 +29,7 @@
     "react-quill": "^2.0.0",
     "react-router-dom": "^6.26.2",
     "simplex-noise": "^4.0.3",
-    "sonner": "^1.7.0",
+    "sonner": "^1.7.2",
     "tabler": "^1.0.0",
     "tailwind-merge": "^2.5.4",
     "uuid": "^10.0.0",
