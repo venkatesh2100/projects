@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "../../components/navbar";
-import Footer from "../../components/footer";
+// import Footer from "../../components/footer"; 
 import { Toaster } from "sonner";
 import Particles from "../../components/aboutme/particles";
 
@@ -49,7 +49,7 @@ export default function RootLayout({
 
         <Particles className="absolute inset-0 -z-10 animate-fade-in" quantity={150} />
 
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
