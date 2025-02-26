@@ -7,7 +7,7 @@ export const TextGenerateEffect = ({
   words,
   className,
   filter = true,
-  duration = 0.5,
+  duration = 0.7,
 }: {
   words: string;
   className?: string;
@@ -40,9 +40,12 @@ export const TextGenerateEffect = ({
             className={`${
               word === "Venkatesh" ? "text-purple-500" : "dark:text-white text-black"
             } opacity-0`}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             style={{
               filter: filter ? "blur(10px)" : "none",
             }}
+
           >
             {word}{" "}
           </motion.span>
