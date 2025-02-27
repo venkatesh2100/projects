@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
-// import { cn } from '../../src/app/lib/utils';
 const ToggleButton: React.FC = () => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
   const [showFullScreen, setShowFullScreen] = useState<boolean>(false);
 
-  // Load the theme from localStorage on component mount
   useEffect(() => {
     const theme = localStorage.getItem('theme');
     if (theme) {
@@ -13,7 +11,6 @@ const ToggleButton: React.FC = () => {
     }
   }, []);
 
-  // Toggle the theme and full-screen display
   const toggleTheme = () => {
     const newTheme = isDarkMode ? 'light' : 'dark';
     setIsDarkMode(!isDarkMode);
@@ -38,7 +35,6 @@ const ToggleButton: React.FC = () => {
         className={`relative z-10 flex items-center justify-between w-16 h-8 p-1 bg-gray-300 dark:bg-gray-700 rounded-full focus:outline-none focus:ring-4 focus:ring-offset-2 focus:ring-indigo-500 transition-all duration-300`}
         aria-label="Toggle Dark Mode"
       >
-        {/* Sun Icon (Light Mode) */}
         <span
           className={`flex items-center justify-center w-6 h-6 text-yellow-500 transition-transform duration-500 ${
             isDarkMode
@@ -49,7 +45,6 @@ const ToggleButton: React.FC = () => {
           ☀️
         </span>
 
-        {/* Moon Icon (Dark Mode) */}
         <span
           className={`flex items-center justify-center w-6 h-6 text-gray-300 transition-transform duration-500 ${
             isDarkMode ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
@@ -58,7 +53,6 @@ const ToggleButton: React.FC = () => {
           🌙
         </span>
 
-        {/* Toggle Indicator */}
         <span
           className={`absolute left-1 w-6 h-6 bg-white rounded-full shadow-md transform transition-transform duration-500 ${
             isDarkMode ? 'translate-x-8' : 'translate-x-0'
@@ -66,7 +60,6 @@ const ToggleButton: React.FC = () => {
         />
       </button>
 
-      {/* Full-Screen Styles */}
       <style jsx>{`
         .full-screen-content {
           background-color: rgba(0, 0, 0, 0.8);
