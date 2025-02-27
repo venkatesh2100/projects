@@ -35,7 +35,7 @@ const Projects = () => {
       image: "/dukkan.png", // Use the correct image file here
       icon: "/dukkan.svg",
       source: "https://github.com/venkatesh2100/Dukkan",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/mdb.svg", "/recoiljs.svg"],
+      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/postman.png", "/JS.png"],
     },
     {
       name: "Tic-Tac-Toe",
