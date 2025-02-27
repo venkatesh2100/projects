@@ -38,7 +38,7 @@ export const HeroBtn = () => {
   };
 
   return (
-    <motion.button
+  <motion.button
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
       onClick={handleClick}
