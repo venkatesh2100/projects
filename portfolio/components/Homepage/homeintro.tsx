@@ -1,6 +1,8 @@
 'use client';
+import TimerContainer from '@/app/countdown/page';
 import { Spotlight } from '../aboutme/ui/Spotlight';
 import { TextGenerateEffect } from '../aboutme/ui/TextGenerateEffect';
+// import CountdownTimer from '../ui/countDown';
 import { SocialLink } from '../ui/socialink';
 import { HeroBtn } from './aboutme';
 import { motion } from 'framer-motion';
@@ -85,13 +87,14 @@ export const HomeIntro = () => {
           </div>
         </div>
       </section>
+      <TimerContainer/>
       <style jsx>{`
         @keyframes rise {
           0% {
             transform: translateY(0);
           }
           100% {
-            transform: translateY(-60px); 
+            transform: translateY(-60px);
           }
         }
         .animate-rise {

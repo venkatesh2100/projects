@@ -2,7 +2,6 @@ import type { Config } from 'tailwindcss';
 // import svgToDataUri from 'mini-svg-data-uri';
 // import colors from 'tailwindcss/colors';
 // import flattenColorPalette from 'tailwindcss/lib/util/flattenColorPalette';
-
 const config: Config = {
   darkMode: 'class',
   content: [
@@ -35,6 +34,10 @@ const config: Config = {
         boy: "url('/win-1.cur'), auto",
         win2: "url('/win-2.cur'), auto",
         rock: "url('/Rocket Pointer.png'), auto",
+      },
+      fontFamily:{
+        sigmar: ["Sigmar"],
+        hentaigana: ["Noto Serif Hentaigana"],
       },
     },
   },
