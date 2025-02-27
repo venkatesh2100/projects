@@ -72,13 +72,13 @@ const ResumeComponent: React.FC = () => {
           </section>
 
           {/* Education */}
-          <section className="mb-6">
+          {/* <section className="mb-6">
             <h2 className="text-2xl font-semibold text-blue-600 border-b-2 border-blue-300 pb-2 mb-4">
               Education
             </h2>
             <p><strong>Bachelor of Engineering in Computer Science:</strong> Pragati Engineering College, Surampalem, AP (Oct 2022 – Apr 2026, 8.6 CGPA)</p>
             <p><strong>Senior Secondary School Certificate (MBiPC):</strong> Jawahar Navodaya Vidyalaya, Yanam, PY (July 2020 – Apr 2022, 85.6%)</p>
-          </section>
+          </section> */}
 
           {/* Certifications */}
           <section className="mb-6">
