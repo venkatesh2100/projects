@@ -3,7 +3,7 @@ import GitHubCalendar from "react-github-calendar";
 
 const GitHubChart = ({ username = "" }) => {
   const today = new Date();
-  const lastYear = new Date(today.getFullYear() - 1, 0, 1); 
+  const lastYear = new Date(today.getFullYear() - 1, 0, 1);
 
   const [theme, setTheme] = useState("light");
 
