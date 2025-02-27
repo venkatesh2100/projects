@@ -19,7 +19,7 @@ const BlogPage = async ({ params }: { params: { id: string } }) => {
   return (
     <div className="max-w-3xl mx-auto min-h-screen p-6 md:p-10">
       <h1 className="text-5xl font-extrabold text-gray-900 dark:text-white mb-4">{blog.title}</h1>
-      <p className="text-lg text-gray-600 mb-4">By <span className="font-semibold">{blog.author}</span></p>
+      {/* <p className="text-lg text-gray-600 mb-4"><span className="font-semibold">{blog.author}</span></p> */}
 
       <div className="w-full h-[400px] relative rounded-lg overflow-hidden shadow-md">
         <Image
@@ -38,7 +38,7 @@ const BlogPage = async ({ params }: { params: { id: string } }) => {
 
       <div className="mt-6 text-sm text-gray-500 flex justify-between">
         <p>👁️ Views: {blog.views}</p>
-        <p>💬 Comments: {blog.comments}</p>
+        <p>💬 Comments: {blog.coment ===null?"":blog.coment}</p>
       </div>
     </div>
   );
