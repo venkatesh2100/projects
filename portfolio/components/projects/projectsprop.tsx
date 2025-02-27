@@ -6,15 +6,15 @@ import { FaLocationArrow } from "react-icons/fa6";
 const Projects = () => {
   const data = [
     {
-      name: "Paytm",
+      name: "paymatter",
       link: "",
       description:
         "A simple web application for money transfers that includes user signup, authentication, secure data storage, and robust transaction functionality.",
       stack: ["Typescript", "Express", "Nextjs"],
-      image: "/paytm.png", // Path should be relative to 'public' for Next.js
+      image: "/paymatter.png",
       icon: "/wallet.svg",
-      source: "https://github.com/venkatesh2100/paytm ",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/mdb.svg", "/recoiljs.svg"],
+      source: "https://github.com/dreamxcodey/paymatter",
+      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/turbo.png", "/docker.png"],
     },
     {
       name: "Blog-site",
@@ -22,10 +22,10 @@ const Projects = () => {
       description:
         "A clean web application using TypeScript for creating and managing a blog. Implement user authentication, and a robust database system to store blog posts, and user data.",
       stack: ["React", "Prisma", "Postgres"],
-      image: "/blog.jpeg", // Path should be relative to 'public' for Next.js
+      image: "/blogs.jpg", // Path should be relative to 'public' for Next.js
       icon: "/blog.svg",
       source: "https://github.com/venkatesh2100/Blog-site",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/mdb.svg", "/recoiljs.svg"],
+      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/nodejs.png", "/nextjs.png"],
     },
     {
       name: "Dukaan",
@@ -77,9 +77,8 @@ const Projects = () => {
             </h1>
 
             <p
-              className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
+              className="lg:text-xl lg:font-normal text-gray-800 dark:text-white font-light text-sm line-clamp-2"
               style={{
-                color: "#BEC1DD",
                 margin: "1vh 0",
               }}
             >
