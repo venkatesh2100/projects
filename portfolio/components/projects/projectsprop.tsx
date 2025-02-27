@@ -42,10 +42,10 @@ const Projects = () => {
       link: "",
       description: "It is a full-stack application that allows users to play the classic Tic Tac Toe game in both single-player and multiplayer modes.",
       stack: ["React", "Python", "Flask"],
-      image: "/AI.png", // Path should be relative to 'public' for Next.js
+      image: "/real.png", // Path should be relative to 'public' for Next.js
       icon: "/tic.svg",
       source: "https://github.com/venkatesh2100/TIC_TAC",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/mdb.svg", "/recoiljs.svg"],
+      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/python.png", "/github.png"],
     },
     // Removed duplicated Dukaan entries
   ];
