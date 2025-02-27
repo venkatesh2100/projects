@@ -31,13 +31,17 @@ export const HomeIntro = () => {
           />
 
           <div className="col-span-3 max-w-2xl">
-            <p className="px-0 text-lg text-left text-text2 md:leading-8 mb-4">
+            <motion.p
+              initial={{ opacity: 0, y: 200 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="px-0 text-lg text-left text-text2 md:leading-8 mb-4"
+            >
               A software engineer from India, specializing in JavaScript,
               TypeScript, React, and 69 other technologies. Passionate about
               serverless architectures and full-stack development, I’m always
               exploring new technologies. I do fullstack and a bit of everything
               ❤️ All About living life at its best.
-            </p>
+            </motion.p>
             <div className="mb-4  flex ">
               <div>
                 <SocialLink />
@@ -87,7 +91,7 @@ export const HomeIntro = () => {
           </div>
         </div>
       </section>
-      <TimerContainer/>
+      <TimerContainer />
       <style jsx>{`
         @keyframes rise {
           0% {
