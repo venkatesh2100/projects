@@ -1,5 +1,5 @@
 import Navbar from "../components/navbar"
-
+export * from "@prisma/client"
 
 export default function Home() {
   return(
