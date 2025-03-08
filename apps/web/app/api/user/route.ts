@@ -4,6 +4,7 @@ import { PrismaClient } from "@prisma/client";
 
 const client = new PrismaClient();
 
+
 export const GET = async () => {
   // const hashedPassword = await bcrypt.hash("code", 10);
 
