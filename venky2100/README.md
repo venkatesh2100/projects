@@ -13,24 +13,25 @@ The technologies I'm fluent in are:
 * NextJS
 * Express
 * Prisma
-* Flask
-* Django
+* Postgress
+* TailwindCss
 
 I'm currently learning:
 * Rust
-* Ruby
-* Go
+* Redis
+* CI/CD
 * C
 * C#
-* Swift(UI)
-* CTF pwn/RE
+* Payment Integration
+* React Native
+* Nmap
 
 In the future, I want to learn:
-* AI / ML (my math is trash)
+* AI / ML (my math is ↝)
 * Functional programming (Haskell)
+* Custom Hyprland Dotfiles.
 * Making my own language
 * Making my own OS
 
 # Reach out to me
 Check out my website [here](https://venkatesh2100.vercel.app/)
-
